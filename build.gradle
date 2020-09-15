@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id "org.flywaydb.flyway" version "6.5.5"
+    id "org.jetbrains.gradle.plugin.idea-ext" version "0.5"
+}
+
+group 'com.next'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile 'junit:junit:4.12'
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.3.RELEASE'
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.3.3.RELEASE'
+        compile group: 'org.postgresql', name: 'postgresql', version: '42.2.16'
+        compile group: 'org.flywaydb', name: 'flyway-core', version: '5.0.3'
+    }
+}
+
+dependencies {
+    compile 'junit:junit:4.12'
+}

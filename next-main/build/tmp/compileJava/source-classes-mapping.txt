@@ -1,0 +1,36 @@
+com/next/reservations/config/FlywayConfig.java
+ com.next.reservations.config.FlywayConfig
+com/next/reservations/core/domain/ReservationDetails.java
+ com.next.reservations.core.domain.ReservationDetails
+com/next/reservations/core/domain/ReservationStatus.java
+ com.next.reservations.core.domain.ReservationStatus
+com/next/reservations/core/domain/ReservationTimeConfiguration.java
+ com.next.reservations.core.domain.ReservationTimeConfiguration
+com/next/main/NextMain.java
+ com.next.main.NextMain
+com/next/reservations/core/domain/ReservationTime.java
+ com.next.reservations.core.domain.ReservationTime
+com/next/reservations/core/domain/AlternativeReservationTimeDateRange.java
+ com.next.reservations.core.domain.AlternativeReservationTimeDateRange
+com/next/reservations/core/repository/ReservationDetailsRepository.java
+ com.next.reservations.core.repository.ReservationDetailsRepository
+com/next/reservations/core/repository/ReservationTimeRepository.java
+ com.next.reservations.core.repository.ReservationTimeRepository
+com/next/reservations/core/repository/AlternativeRTDateRangeRepository.java
+ com.next.reservations.core.repository.AlternativeRTDateRangeRepository
+com/next/reservations/core/service/AlternativeRTDateRangeService.java
+ com.next.reservations.core.service.AlternativeRTDateRangeService
+com/next/reservations/core/service/ReservationTimeService.java
+ com.next.reservations.core.service.ReservationTimeService
+com/next/reservations/core/domain/Reservation.java
+ com.next.reservations.core.domain.Reservation
+com/next/reservations/core/service/ReservationDetailsService.java
+ com.next.reservations.core.service.ReservationDetailsService
+com/next/reservations/core/repository/ReservationTimeConfigurationRepository.java
+ com.next.reservations.core.repository.ReservationTimeConfigurationRepository
+com/next/reservations/core/service/ReservationService.java
+ com.next.reservations.core.service.ReservationService
+com/next/reservations/core/repository/ReservationRepository.java
+ com.next.reservations.core.repository.ReservationRepository
+com/next/reservations/core/service/ReservationTimeConfigurationService.java
+ com.next.reservations.core.service.ReservationTimeConfigurationService

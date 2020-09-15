@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="next.main" target="11" />
+      <module name="next.next-main.main" target="11" />
+      <module name="next.next-main.test" target="11" />
+      <module name="next.reservations" target="11" />
+      <module name="next.reservations.main" target="11" />
+      <module name="next.reservations.test" target="11" />
+      <module name="next.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
