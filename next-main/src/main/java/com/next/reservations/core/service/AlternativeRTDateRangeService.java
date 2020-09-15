@@ -6,6 +6,7 @@ import com.next.reservations.core.repository.AlternativeRTDateRangeRepository;
 import org.springframework.stereotype.Service;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 @Service
 public class AlternativeRTDateRangeService {
@@ -16,7 +17,7 @@ public class AlternativeRTDateRangeService {
         this.repository = repository;
     }
 
-    public AlternativeReservationTimeDateRange createOrUpdate(Long id, Date fromDate, Date toDate,
+    public AlternativeReservationTimeDateRange createOrUpdate(Long id, LocalDate fromDate, LocalDate toDate,
                                                               ReservationTimeConfiguration reservationTimeConfiguration){
         if(id == null){
             return create(fromDate, toDate, reservationTimeConfiguration);
@@ -25,7 +26,7 @@ public class AlternativeRTDateRangeService {
         }
     }
 
-    private AlternativeReservationTimeDateRange create(Date fromDate, Date toDate,
+    private AlternativeReservationTimeDateRange create(LocalDate fromDate, LocalDate toDate,
                                                        ReservationTimeConfiguration reservationTimeConfiguration){
         final AlternativeReservationTimeDateRange alternativeReservationTimeDateRange =
                 new AlternativeReservationTimeDateRange(fromDate, toDate, reservationTimeConfiguration);
@@ -33,7 +34,7 @@ public class AlternativeRTDateRangeService {
         return repository.save(alternativeReservationTimeDateRange);
     }
 
-    private AlternativeReservationTimeDateRange update(Long id, Date fromDate, Date toDate,
+    private AlternativeReservationTimeDateRange update(Long id, LocalDate fromDate, LocalDate toDate,
                                                        ReservationTimeConfiguration reservationTimeConfiguration){
         final AlternativeReservationTimeDateRange alternativeReservationTimeDateRange = findById(id);
 

@@ -27,6 +27,8 @@ public class ReservationDetails {
     @Column(name = "number_of_players", nullable = false)
     private int numberOfPlayers;
 
+    public ReservationDetails(){}
+
     public ReservationDetails(String fullName, String email, String phoneNumber, String comment, int numberOfPlayers) {
         this.fullName = fullName;
         this.email = email;

@@ -1,10 +1,10 @@
 package com.next.reservations.core.domain;
 
 import javax.persistence.*;
-import java.sql.Time;
+import java.time.LocalTime;
 
 @Entity
-@Table(schema = "reservations", name = "reservation_time")
+@Table(schema = "reservations", name = "reservation_times")
 public class ReservationTime {
 
     @Id
@@ -12,14 +12,16 @@ public class ReservationTime {
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
-    @Column(name = "time", nullable = false)
-    private Time time;
+    @Column(name = "time_of_day", nullable = false)
+    private LocalTime time;
 
     @ManyToOne
     @JoinColumn(name = "reservation_time_configuration_id", nullable = false)
     private ReservationTimeConfiguration reservationTimeConfiguration;
 
-    public ReservationTime(Time time, ReservationTimeConfiguration reservationTimeConfiguration) {
+    public ReservationTime(){}
+
+    public ReservationTime(LocalTime time, ReservationTimeConfiguration reservationTimeConfiguration) {
         this.time = time;
         this.reservationTimeConfiguration = reservationTimeConfiguration;
     }
@@ -28,11 +30,11 @@ public class ReservationTime {
         return id;
     }
 
-    public Time getTime() {
+    public LocalTime getTime() {
         return time;
     }
 
-    public void setTime(Time time) {
+    public void setTime(LocalTime time) {
         this.time = time;
     }
 

@@ -8,6 +8,7 @@ import com.next.reservations.core.repository.ReservationRepository;
 import org.springframework.stereotype.Service;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -20,7 +21,7 @@ public class ReservationService {
     }
 
     public Reservation create(ReservationStatus status, ReservationDetails reservationDetails, ReservationTime reservationTime,
-                              Date reservationDate) {
+                              LocalDate reservationDate) {
         final Reservation reservation = new Reservation(status, reservationDetails, reservationDate, reservationTime);
 
         return repository.save(reservation);
@@ -51,7 +52,7 @@ public class ReservationService {
         return repository.save(reservation);
     }
 
-    public Reservation setNewDateTime(Long id, Date date, ReservationTime time) {
+    public Reservation setNewDateTime(Long id, LocalDate date, ReservationTime time) {
         final Reservation reservation = findById(id);
 
         reservation.setReservationTime(time);

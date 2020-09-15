@@ -6,6 +6,8 @@ import com.next.reservations.core.repository.ReservationTimeRepository;
 import org.springframework.stereotype.Service;
 
 import java.sql.Time;
+import java.time.LocalTime;
+import java.util.List;
 
 @Service
 public class ReservationTimeService {
@@ -16,13 +18,21 @@ public class ReservationTimeService {
         this.repository = repository;
     }
 
-    public ReservationTime create(Time time, ReservationTimeConfiguration reservationTimeConfiguration){
+    public ReservationTime createOrUpdate(Long id, LocalTime time, ReservationTimeConfiguration reservationTimeConfiguration) {
+        if(id == null){
+            return create(time, reservationTimeConfiguration);
+        } else {
+            return updateTime(id, time);
+        }
+    }
+
+    private ReservationTime create(LocalTime time, ReservationTimeConfiguration reservationTimeConfiguration) {
         final ReservationTime reservationTime = new ReservationTime(time, reservationTimeConfiguration);
 
         return repository.save(reservationTime);
     }
 
-    public ReservationTime updateTime(Long id, Time time){
+    private ReservationTime updateTime(Long id, LocalTime time) {
         final ReservationTime reservationTime = findById(id);
 
         reservationTime.setTime(time);
@@ -30,11 +40,15 @@ public class ReservationTimeService {
         return repository.save(reservationTime);
     }
 
-    public ReservationTime findById(Long id){
+    public List<ReservationTime> findAllByReservationTimeConfigId(Long reservationTimeConfigId) {
+        return repository.findAllByReservationTimeConfigurationId(reservationTimeConfigId);
+    }
+
+    public ReservationTime findById(Long id) {
         return repository.findById(id).orElseThrow();
     }
 
-    public void delete(Long id){
+    public void delete(Long id) {
         repository.delete(findById(id));
     }
 }

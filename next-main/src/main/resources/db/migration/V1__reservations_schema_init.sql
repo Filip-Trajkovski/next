@@ -23,7 +23,7 @@ create table reservations.reservation_time_configurations
 create table reservations.reservation_times
 (
     id                                bigserial primary key,
-    time_of_day                       time      not null,
+    time_of_day                       reservationTimeId      not null,
     reservation_time_configuration_id bigserial not null references reservations.reservation_time_configurations (id)
 );
 
@@ -52,7 +52,7 @@ create table reservations.reservations
     reservation_date             date,
     reservation_time_id          bigint references reservations.reservation_times (id),
     previous_reservation_date    date,
-    previous_reservation_time_id time,
+    previous_reservation_time_id reservationTimeId,
     status                       int    not null references reservations.reservation_statuses (id),
     reservation_details_id       bigint not null references reservations.reservation_details (id)
 );

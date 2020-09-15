@@ -1,6 +1,7 @@
 package com.next.reservations.core.domain;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -19,9 +20,11 @@ public class ReservationTimeConfiguration {
     private boolean defaultConfig;
 
     @Column(name = "default_start_date")
-    private Date defaultStartDate;
+    private LocalDate defaultStartDate;
 
-    public ReservationTimeConfiguration(String name, boolean defaultConfig, Date defaultStartDate) {
+    public ReservationTimeConfiguration(){}
+
+    public ReservationTimeConfiguration(String name, boolean defaultConfig, LocalDate defaultStartDate) {
         this.name = name;
         this.defaultConfig = defaultConfig;
         this.defaultStartDate = defaultStartDate;
@@ -47,11 +50,11 @@ public class ReservationTimeConfiguration {
         this.defaultConfig = defaultConfig;
     }
 
-    public Date getDefaultStartDate() {
+    public LocalDate getDefaultStartDate() {
         return defaultStartDate;
     }
 
-    public void setDefaultStartDate(Date defaultStartDate) {
+    public void setDefaultStartDate(LocalDate defaultStartDate) {
         this.defaultStartDate = defaultStartDate;
     }
 }

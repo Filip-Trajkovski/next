@@ -1,12 +1,11 @@
 package com.next.reservations.core.domain;
 
 import javax.persistence.*;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
-@Table(schema = "reservations", name = "reservation")
+@Table(schema = "reservations", name = "reservations")
 public class Reservation {
 
     @Id
@@ -22,19 +21,21 @@ public class Reservation {
     private ReservationDetails reservationDetails;
 
     @Column(name = "reservation_date")
-    private Date reservationDate;
+    private LocalDate reservationDate;
 
     @ManyToOne
     @JoinColumn(name = "reservation_time_id")
     private ReservationTime reservationTime;
 
     @Column(name = "previous_reservation_date")
-    private Date previousReservationDate;
+    private LocalDate previousReservationDate;
 
     @Column(name = "previous_reservation_time_id")
-    private Time previousReservationTime;
+    private LocalTime previousReservationTime;
 
-    public Reservation(ReservationStatus status, ReservationDetails reservationDetails, Date reservationDate, ReservationTime reservationTime) {
+    public Reservation(){}
+
+    public Reservation(ReservationStatus status, ReservationDetails reservationDetails, LocalDate reservationDate, ReservationTime reservationTime) {
         this.status = status;
         this.reservationDetails = reservationDetails;
         this.reservationDate = reservationDate;
@@ -61,11 +62,11 @@ public class Reservation {
         this.reservationDetails = reservationDetails;
     }
 
-    public Date getReservationDate() {
+    public LocalDate getReservationDate() {
         return reservationDate;
     }
 
-    public void setReservationDate(Date reservationDate) {
+    public void setReservationDate(LocalDate reservationDate) {
         this.reservationDate = reservationDate;
     }
 
@@ -77,19 +78,19 @@ public class Reservation {
         this.reservationTime = reservationTime;
     }
 
-    public Date getPreviousReservationDate() {
+    public LocalDate getPreviousReservationDate() {
         return previousReservationDate;
     }
 
-    public void setPreviousReservationDate(Date previousReservationDate) {
+    public void setPreviousReservationDate(LocalDate previousReservationDate) {
         this.previousReservationDate = previousReservationDate;
     }
 
-    public Time getPreviousReservationTime() {
+    public LocalTime getPreviousReservationTime() {
         return previousReservationTime;
     }
 
-    public void setPreviousReservationTime(Time previousReservationTime) {
+    public void setPreviousReservationTime(LocalTime previousReservationTime) {
         this.previousReservationTime = previousReservationTime;
     }
 }

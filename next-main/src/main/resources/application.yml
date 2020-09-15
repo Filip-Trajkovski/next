@@ -5,6 +5,8 @@ spring:
     password: postgres
   jpa:
     show-sql: false
+    hibernate:
+      ddl-auto: validate
   flyway:
     locations: classpath:db.migration
     enabled: true
