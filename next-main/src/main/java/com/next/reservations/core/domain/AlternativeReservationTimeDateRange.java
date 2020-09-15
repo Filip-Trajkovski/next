@@ -1,6 +1,7 @@
 package com.next.reservations.core.domain;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -13,16 +14,18 @@ public class AlternativeReservationTimeDateRange {
     private Long id;
 
     @Column(name = "from_date", nullable = false)
-    private Date fromDate;
+    private LocalDate fromDate;
 
     @Column(name = "to_date", nullable = false)
-    private Date toDate;
+    private LocalDate toDate;
 
     @ManyToOne
     @JoinColumn(name = "reservation_time_configuration_id", nullable = false)
     private ReservationTimeConfiguration reservationTimeConfiguration;
 
-    public AlternativeReservationTimeDateRange(Date fromDate, Date toDate, ReservationTimeConfiguration reservationTimeConfiguration) {
+    public AlternativeReservationTimeDateRange(){}
+
+    public AlternativeReservationTimeDateRange(LocalDate fromDate, LocalDate toDate, ReservationTimeConfiguration reservationTimeConfiguration) {
         this.fromDate = fromDate;
         this.toDate = toDate;
         this.reservationTimeConfiguration = reservationTimeConfiguration;
@@ -32,19 +35,19 @@ public class AlternativeReservationTimeDateRange {
         return id;
     }
 
-    public Date getFromDate() {
+    public LocalDate getFromDate() {
         return fromDate;
     }
 
-    public void setFromDate(Date fromDate) {
+    public void setFromDate(LocalDate fromDate) {
         this.fromDate = fromDate;
     }
 
-    public Date getToDate() {
+    public LocalDate getToDate() {
         return toDate;
     }
 
-    public void setToDate(Date toDate) {
+    public void setToDate(LocalDate toDate) {
         this.toDate = toDate;
     }
 

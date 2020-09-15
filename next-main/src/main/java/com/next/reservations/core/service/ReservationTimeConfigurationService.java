@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
 @Service
@@ -17,30 +18,26 @@ public class ReservationTimeConfigurationService {
         this.repository = repository;
     }
 
-    public ReservationTimeConfiguration createOrUpdate(Long id, String name, Boolean defaultConfig, Date defaultStartDate) {
-        if(defaultConfig && checkIfDefaultExists()){
-            throw new RuntimeException("Vekje postoi default torko");
-        }
+    public ReservationTimeConfiguration createOrUpdate(Long id, String name, LocalDate defaultStartDate) {
 
         if(id == null){
-            return create(name, defaultConfig, defaultStartDate);
+            return create(name, defaultStartDate);
         } else {
-            return update(id, name, defaultConfig, defaultStartDate);
+            return update(id, name, defaultStartDate);
         }
     }
 
-    private ReservationTimeConfiguration create(String name, Boolean defaultConfig, Date defaultStartDate) {
+    private ReservationTimeConfiguration create(String name, LocalDate defaultStartDate) {
         final ReservationTimeConfiguration reservationTimeConfiguration =
-                new ReservationTimeConfiguration(name, defaultConfig, defaultStartDate);
+                new ReservationTimeConfiguration(name, false, defaultStartDate);
 
         return repository.save(reservationTimeConfiguration);
     }
 
-    private ReservationTimeConfiguration update(Long id, String name, Boolean defaultConfig, Date defaultStartDate) {
+    private ReservationTimeConfiguration update(Long id, String name, LocalDate defaultStartDate) {
         final ReservationTimeConfiguration reservationTimeConfiguration = findById(id);
 
         reservationTimeConfiguration.setName(name);
-        reservationTimeConfiguration.setDefaultConfig(defaultConfig);
         reservationTimeConfiguration.setDefaultStartDate(defaultStartDate);
 
         return repository.save(reservationTimeConfiguration);
