@@ -6,5 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface ReservationTimeConfigurationRepository extends JpaRepository<ReservationTimeConfiguration, Long> {
-    Optional<ReservationTimeConfiguration> findByDefaultConfigTrue();
+    ReservationTimeConfiguration findByDefaultConfigTrue();
+    Optional<ReservationTimeConfiguration> findByDefaultStartDateIsNotNull();
 }

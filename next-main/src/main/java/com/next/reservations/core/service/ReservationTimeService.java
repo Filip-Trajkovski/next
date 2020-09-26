@@ -5,7 +5,6 @@ import com.next.reservations.core.domain.ReservationTimeConfiguration;
 import com.next.reservations.core.repository.ReservationTimeRepository;
 import org.springframework.stereotype.Service;
 
-import java.sql.Time;
 import java.time.LocalTime;
 import java.util.List;
 

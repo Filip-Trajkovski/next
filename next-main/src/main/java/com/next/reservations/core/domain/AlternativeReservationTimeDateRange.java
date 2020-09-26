@@ -2,7 +2,6 @@ package com.next.reservations.core.domain;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Table(schema = "reservations", name = "alternative_reservation_time_date_ranges")

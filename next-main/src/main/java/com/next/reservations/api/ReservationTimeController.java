@@ -33,4 +33,8 @@ public class ReservationTimeController {
         return mapper.createOrUpdateConfiguration(reservationTimeConfigurationRequest);
     }
 
+    @GetMapping("by-date/{date}")
+    public List<ReservationTimeResponse> findAllByDate(@PathVariable String date){
+        return mapper.getTimesForDate(date);
+    }
 }

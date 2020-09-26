@@ -30,7 +30,7 @@ public class Reservation {
     @Column(name = "previous_reservation_date")
     private LocalDate previousReservationDate;
 
-    @Column(name = "previous_reservation_time_id")
+    @Column(name = "previous_reservation_time")
     private LocalTime previousReservationTime;
 
     public Reservation(){}

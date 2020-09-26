@@ -7,7 +7,6 @@ import com.next.reservations.core.domain.ReservationTime;
 import com.next.reservations.core.repository.ReservationRepository;
 import org.springframework.stereotype.Service;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -65,8 +64,8 @@ public class ReservationService {
         return repository.findAllByStatus(status);
     }
 
-   public List<Reservation> findAllByStatusAndReservationDate(ReservationStatus status, Date date){
-        return repository.findAllByStatusAndReservationDate(status, date);
+   public List<Reservation> findAllByStatusInAndReservationDate(List<ReservationStatus> status, LocalDate date){
+        return repository.findAllByStatusInAndReservationDate(status, date);
    }
 
     public Reservation findById(Long id){

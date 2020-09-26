@@ -1,5 +1,6 @@
 package com.next.reservations.core.service;
 
+import com.next.reservations.core.domain.Reservation;
 import com.next.reservations.core.domain.ReservationTimeConfiguration;
 import com.next.reservations.core.repository.ReservationTimeConfigurationRepository;
 import org.springframework.stereotype.Service;
@@ -52,24 +53,24 @@ public class ReservationTimeConfigurationService {
         repository.save(newDefault);
     }
 
-    private boolean checkIfDefaultExists() {
-        return findByDefaultConfigTrue().isPresent();
-    }
 
     private void removePreviousDefault() {
-        final Optional<ReservationTimeConfiguration> currentDefault = findByDefaultConfigTrue();
+        final ReservationTimeConfiguration currentDefault = findByDefaultConfigTrue();
 
-        currentDefault.ifPresent(it -> {
-            it.setDefaultConfig(false);
-            repository.save(it);
-        });
+        currentDefault.setDefaultConfig(false);
+        repository.save(currentDefault);
     }
 
-    public Optional<ReservationTimeConfiguration> findByDefaultConfigTrue() {
+    public ReservationTimeConfiguration findByDefaultConfigTrue() {
         return repository.findByDefaultConfigTrue();
     }
 
     public ReservationTimeConfiguration findById(Long id) {
         return repository.findById(id).orElseThrow();
     }
+
+    public Optional<ReservationTimeConfiguration> findFutureDefault(){
+        return repository.findByDefaultStartDateIsNotNull();
+    }
+
 }

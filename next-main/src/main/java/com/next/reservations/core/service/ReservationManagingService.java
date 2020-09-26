@@ -37,7 +37,7 @@ public class ReservationManagingService {
 
         final ReservationTime reservationTime = reservationTimeService.findById(reservationRequest.reservationTimeId);
 
-        final List<Integer> dateParts = Arrays.stream(reservationRequest.date.split("/"))
+        final List<Integer> dateParts = Arrays.stream(reservationRequest.date.split("-"))
                 .mapToInt(Integer::parseInt).boxed().collect(Collectors.toList());
 
         final LocalDate localDate = LocalDate.of(dateParts.get(0), dateParts.get(1), dateParts.get(2));
