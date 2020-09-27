@@ -4,6 +4,7 @@ import com.next.reservations.web.mapper.ReservationTimeMapper;
 import com.next.reservations.web.request.ReservationTimeConfigurationRequest;
 import com.next.reservations.web.request.ReservationTimeRequest;
 import com.next.reservations.web.response.ReservationTimeResponse;
+import com.next.shared.domain.Option;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,7 +35,7 @@ public class ReservationTimeController {
     }
 
     @GetMapping("by-date/{date}")
-    public List<ReservationTimeResponse> findAllByDate(@PathVariable String date){
+    public List<Option> findAllByDate(@PathVariable String date){
         return mapper.getTimesForDate(date);
     }
 }

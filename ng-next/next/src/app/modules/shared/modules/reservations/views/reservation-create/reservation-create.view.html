@@ -1,0 +1,47 @@
+<div class="reservation-card">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Изберете датум*</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Изберете термин*</mat-label>
+      <mat-select formControlName="reservationTimeId">
+        <mat-option [value]="null" >--</mat-option>
+        <mat-option *ngFor="let reservationTime of (reservationTimes$ | async)" [value]="reservationTime.id">
+          {{reservationTime.label}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="fullName" placeholder="Име и презиме*">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="E-Mail*">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="phoneNumber" placeholder="Број на телефон*">
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea rows="5" matInput formControlName="comment" placeholder="Дополнителен коментар"></textarea>
+    </mat-form-field>
+  </form>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Изберете број на играчи*</mat-label>
+    <mat-select formControlName="numberOfPlayers">
+      <mat-option [value]="null" >--</mat-option>
+      <mat-option *ngFor="let numberOfPlayers of (numberOfPlayers$ | async)" [value]="numberOfPlayers.id">
+        {{numberOfPlayers.label}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

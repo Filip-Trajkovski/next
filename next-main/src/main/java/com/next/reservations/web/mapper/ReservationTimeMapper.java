@@ -8,6 +8,7 @@ import com.next.reservations.core.service.ReservationTimeService;
 import com.next.reservations.web.request.ReservationTimeConfigurationRequest;
 import com.next.reservations.web.request.ReservationTimeRequest;
 import com.next.reservations.web.response.ReservationTimeResponse;
+import com.next.shared.domain.Option;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -61,7 +62,7 @@ public class ReservationTimeMapper {
                 reservationTimeConfigurationRequest.name, date).getId();
     }
 
-    public List<ReservationTimeResponse> getTimesForDate(String date) {
+    public List<Option> getTimesForDate(String date) {
         final List<Integer> dateParts = Arrays.stream(date.split("-"))
                 .mapToInt(Integer::parseInt).boxed().collect(Collectors.toList());
 
@@ -70,7 +71,7 @@ public class ReservationTimeMapper {
         final ReservationTimeConfiguration configForDate = reservationTimeManagingService.findConfigurationForDate(chosenDate);
 
         return reservationTimeManagingService.findUnreservedTimesForDate(chosenDate, configForDate).stream()
-                .map(this::convertReservationTimeToReservationTimeResponse).collect(Collectors.toList());
+                .map(it -> new Option(it.getId(), it.getTime().toString())).collect(Collectors.toList());
     }
 
     private ReservationTimeResponse convertReservationTimeToReservationTimeResponse(ReservationTime reservationTime) {
