@@ -1,16 +1,44 @@
 .reservation-card {
-  display: block;
-  padding: 6px;
-  border-radius: 3px;
-  background: lightseagreen;
+  font-size: 14px;
+  margin: auto;
+  background-color: #252525;
   border: 1px solid rgba(0, 0, 0, .03);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .20), 0 0 2px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 5px #3f9d0c, 0 0 5px #5bd311;
   overflow: hidden;
-  width: 35%;
-
-  & mat-form-field {
-    width: 100%;
-    padding: 0 5%;
+  & > form {
+    padding: 2.5%;
   }
 }
 
+
+mat-form-field {
+  width: 100%;
+  padding: 0 5%;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+
+.submit-button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #5bd311;
+  padding: 14px 25px 14px 25px;
+  border-radius: 5px;
+  margin: auto;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.submit-button:hover {
+  background: #3f9d0c;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px #3f9d0c;
+  -moz-box-shadow: 0px 5px 40px -10px #3f9d0c;
+  box-shadow: 5px 40px -10px #3f9d0c;
+  transition: all 0.4s ease 0s;
+}

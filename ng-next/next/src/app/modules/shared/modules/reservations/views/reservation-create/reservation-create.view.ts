@@ -48,6 +48,6 @@ export class ReservationCreateView implements OnInit {
     const parsedDate = new Date(date);
     const formattedDate = moment(parsedDate).format("YYYY-MM-DD");
 
-    this._service.makeReservation({...this.form.value, date: formattedDate});
+    this._service.makeReservation({...this.form.value, date: formattedDate}).subscribe();
   }
 }

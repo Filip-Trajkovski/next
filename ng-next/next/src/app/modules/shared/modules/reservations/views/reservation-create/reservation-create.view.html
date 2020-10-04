@@ -1,5 +1,6 @@
 <div class="reservation-card">
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h4 class="pt-3 justify-content-center">Резервирај</h4>
+  <form [formGroup]="form">
 
     <mat-form-field appearance="fill">
       <mat-label>Изберете датум*</mat-label>
@@ -11,9 +12,19 @@
     <mat-form-field appearance="fill">
       <mat-label>Изберете термин*</mat-label>
       <mat-select formControlName="reservationTimeId">
-        <mat-option [value]="null" >--</mat-option>
+        <mat-option [value]="null">--</mat-option>
         <mat-option *ngFor="let reservationTime of (reservationTimes$ | async)" [value]="reservationTime.id">
           {{reservationTime.label}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Изберете број на играчи*</mat-label>
+      <mat-select formControlName="numberOfPlayers">
+        <mat-option [value]="null">--</mat-option>
+        <mat-option *ngFor="let numberOfPlayers of (numberOfPlayers$ | async)" [value]="numberOfPlayers.id">
+          {{numberOfPlayers.label}}
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -33,15 +44,8 @@
     <mat-form-field>
       <textarea rows="5" matInput formControlName="comment" placeholder="Дополнителен коментар"></textarea>
     </mat-form-field>
+    <div class="d-flex">
+    <a class="submit-button mt-3" (click)="onSubmit()">Резервирај</a>
+    </div>
   </form>
-
-  <mat-form-field appearance="fill">
-    <mat-label>Изберете број на играчи*</mat-label>
-    <mat-select formControlName="numberOfPlayers">
-      <mat-option [value]="null" >--</mat-option>
-      <mat-option *ngFor="let numberOfPlayers of (numberOfPlayers$ | async)" [value]="numberOfPlayers.id">
-        {{numberOfPlayers.label}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
 </div>
