@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.web.mapper;
 
 import com.next.reservations.core.service.ReservationDetailsService;
@@ -26,3 +27,4 @@ public class ReservationMapper {
         return reservationManagingService.createReservation(reservationRequest).getId();
     }
 }
+*/

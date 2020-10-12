@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.web.mapper;
 
 import com.next.reservations.core.domain.ReservationTime;
@@ -78,3 +79,4 @@ public class ReservationTimeMapper {
         return new ReservationTimeResponse(reservationTime.getId(), reservationTime.getTime().toString());
     }
 }
+*/

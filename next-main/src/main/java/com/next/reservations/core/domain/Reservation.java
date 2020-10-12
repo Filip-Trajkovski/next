@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.domain;
 
 import javax.persistence.*;
@@ -94,3 +95,4 @@ public class Reservation {
         this.previousReservationTime = previousReservationTime;
     }
 }
+*/

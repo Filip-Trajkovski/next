@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.api;
 
 import com.next.reservations.web.mapper.ReservationMapper;
@@ -22,3 +23,4 @@ public class ReservationController {
         return mapper.createReservation(request);
     }
 }
+*/

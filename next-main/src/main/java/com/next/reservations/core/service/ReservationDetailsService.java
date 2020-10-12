@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.service;
 
 import com.next.reservations.core.domain.ReservationDetails;
@@ -14,7 +15,7 @@ public class ReservationDetailsService {
     }
 
     public ReservationDetails create(String fullName, String email, String phoneNumber,
-                                      String comment, int numberOfPlayers) {
+                                     String comment, int numberOfPlayers) {
         final ReservationDetails reservationDetails = new ReservationDetails(fullName, email, phoneNumber, comment, numberOfPlayers);
 
         return repository.save(reservationDetails);
@@ -25,3 +26,4 @@ public class ReservationDetailsService {
     }
 
 }
+*/

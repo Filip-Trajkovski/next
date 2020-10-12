@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.api;
 
 import com.next.reservations.web.mapper.ReservationTimeMapper;
@@ -39,3 +40,4 @@ public class ReservationTimeController {
         return mapper.getTimesForDate(date);
     }
 }
+*/

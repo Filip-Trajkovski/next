@@ -1,12 +1,29 @@
 <div>
-  <h4 class="pt-2">Контакт</h4>
+  <h4>Контакт</h4>
 
-  <a href="{{mapLink}}" target="_blank">
-    <div class="map">
+    <img src="../../../../../assets/images/location.png" class="map" (click)="onLinkClick(mapLink)">
+
+  <div class="contact-info-container">
+    <div class="contact-info">
+      <img src="../../../../../assets/images/pin.png">
+      <div class="contact-text">Bul Jane Sandanski 656565</div>
     </div>
-  </a>
+    <div class="contact-info">
+      <img src="../../../../../assets/images/phone.png">
+      <div class="contact-text">+389 70 123 456</div>
+    </div>
+    <div class="contact-info">
+      <img src="../../../../../assets/images/email.png">
+      <div class="contact-text">mefomzt@hotmail.com</div>
+    </div>
+  </div>
 
-  <div>
-
+  <div class="social-media-container">
+    <div class="social-media">
+      <img src="assets/images/facebook.png" (click)="onLinkClick(facebookLink)">
+    </div>
+    <div class="social-media">
+      <img src="assets/images/instagram.png" (click)="onLinkClick(instagramLink)">
+    </div>
   </div>
 </div>

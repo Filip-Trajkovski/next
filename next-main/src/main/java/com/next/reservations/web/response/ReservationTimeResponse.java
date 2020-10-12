@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.web.response;
 
 public class ReservationTimeResponse {
@@ -10,3 +11,4 @@ public class ReservationTimeResponse {
         this.time = time;
     }
 }
+*/

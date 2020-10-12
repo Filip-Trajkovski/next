@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.domain;
 
 import javax.persistence.*;
@@ -58,3 +59,4 @@ public class AlternativeReservationTimeDateRange {
         this.reservationTimeConfiguration = reservationTimeConfiguration;
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.web.request;
 
 import java.util.Optional;
@@ -17,3 +18,4 @@ public class ReservationTimeConfigurationRequest {
         this.defaultStartDate = defaultStartDate;
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.service;
 
 import com.next.reservations.core.domain.ReservationTime;
@@ -51,3 +52,4 @@ public class ReservationTimeService {
         repository.delete(findById(id));
     }
 }
+*/

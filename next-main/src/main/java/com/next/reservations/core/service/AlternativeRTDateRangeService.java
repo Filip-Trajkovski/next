@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.service;
 
 import com.next.reservations.core.domain.AlternativeReservationTimeDateRange;
@@ -49,3 +50,4 @@ public class AlternativeRTDateRangeService {
         return repository.findById(id).orElseThrow();
     }
 }
+*/

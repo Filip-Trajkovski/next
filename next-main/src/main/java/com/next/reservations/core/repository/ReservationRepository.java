@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.repository;
 
 import com.next.reservations.core.domain.Reservation;
@@ -14,3 +15,4 @@ public interface ReservationRepository extends JpaRepository<Reservation, Long> 
 
     List<Reservation> findAllByStatusInAndReservationDate(List<ReservationStatus> status, LocalDate date);
 }
+*/

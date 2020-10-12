@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.web.request;
 
 public class ReservationTimeRequest {
@@ -14,3 +15,4 @@ public class ReservationTimeRequest {
         this.reservationTimeConfigurationId = reservationTimeConfigurationId;
     }
 }
+*/

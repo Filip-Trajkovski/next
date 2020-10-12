@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.repository;
 
 import com.next.reservations.core.domain.ReservationTimeConfiguration;
@@ -9,3 +10,4 @@ public interface ReservationTimeConfigurationRepository extends JpaRepository<Re
     ReservationTimeConfiguration findByDefaultConfigTrue();
     Optional<ReservationTimeConfiguration> findByDefaultStartDateIsNotNull();
 }
+*/

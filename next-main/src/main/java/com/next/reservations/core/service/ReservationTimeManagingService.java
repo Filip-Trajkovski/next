@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.service;
 
 import com.next.reservations.core.domain.Reservation;
@@ -43,3 +44,4 @@ public class ReservationTimeManagingService {
         }
     }
 }
+*/

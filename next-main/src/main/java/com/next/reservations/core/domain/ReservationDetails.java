@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.core.domain;
 
 
@@ -81,3 +82,4 @@ public class ReservationDetails {
         this.numberOfPlayers = numberOfPlayers;
     }
 }
+*/

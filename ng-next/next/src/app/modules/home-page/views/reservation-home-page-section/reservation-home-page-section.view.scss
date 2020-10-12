@@ -14,3 +14,21 @@ contact-us {
   width: 60%;
   display: block;
 }
+
+@media only screen and (max-width: 768px) {
+  reservation-create {
+    width: 100%;
+    display: block;
+  }
+
+  contact-us {
+    width: 100%;
+    display: block;
+  }
+
+  .reservation-section-style {
+    padding: 2%;
+    display: block;
+    background-color: #252525;
+  }
+}

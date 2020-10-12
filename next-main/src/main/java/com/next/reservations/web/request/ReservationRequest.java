@@ -1,3 +1,4 @@
+/*
 package com.next.reservations.web.request;
 
 public class ReservationRequest {
@@ -26,3 +27,4 @@ public class ReservationRequest {
         this.status = status;
     }
 }
+*/

@@ -1,6 +1,6 @@
 package com.next.shared.domain;
 
-public class Option {
+/*public class Option {
     public Long id;
     public String label;
 
@@ -8,4 +8,4 @@ public class Option {
         this.id = id;
         this.label = label;
     }
-}
+}*/
