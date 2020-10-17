@@ -1,10 +1,12 @@
 .reservation-card {
   font-size: 14px;
+  color: white;
   margin: auto;
   background-color: #252525;
   border: 1px solid rgba(0, 0, 0, .03);
   box-shadow: 0 5px 5px #3f9d0c, 0 0 5px #5bd311;
   overflow: hidden;
+
   & > form {
     padding: 2.5%;
   }
@@ -41,4 +43,30 @@ h4 {
   -moz-box-shadow: 0px 5px 40px -10px #3f9d0c;
   box-shadow: 5px 40px -10px #3f9d0c;
   transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.selected-value {
+  color: white;
+}
+
+mat-datepicker-toggle{
+  color: lawngreen;
+}
+
+mat-label{
+  color: white;
+}
+
+::placeholder {
+  color:lawngreen;
+  opacity: 1;
+}
+
+.mat-focused .placeholder {
+  color: lawngreen;
+}
+
+.placeholder  {
+  color: white;
 }

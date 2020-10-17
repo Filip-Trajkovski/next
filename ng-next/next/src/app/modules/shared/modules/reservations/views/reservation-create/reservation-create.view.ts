@@ -1,9 +1,10 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, ViewChild} from "@angular/core";
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {ReservationsService} from "../../services/reservations.service";
 import {Option} from "../../../../interfaces/option.interface";
 import {Observable} from "rxjs";
 import * as moment from "moment";
+import {MatDatepicker} from "@angular/material";
 
 @Component({
   selector: "reservation-create",
@@ -11,6 +12,8 @@ import * as moment from "moment";
   styleUrls: ["reservation-create.view.scss"]
 })
 export class ReservationCreateView implements OnInit {
+  @ViewChild('picker')
+  private picker: MatDatepicker<string>;
 
   form: FormGroup = this._formDefinition;
   reservationTimes$: Observable<Option[]>;
@@ -49,5 +52,9 @@ export class ReservationCreateView implements OnInit {
     const formattedDate = moment(parsedDate).format("YYYY-MM-DD");
 
     this._service.makeReservation({...this.form.value, date: formattedDate}).subscribe();
+  }
+
+  onDatepickerInputClick(){
+    this.picker.open();
   }
 }
