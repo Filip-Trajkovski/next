@@ -1,0 +1,30 @@
+<div class="times-dialog">
+  <button class="set-default" (click)="setDefault()" [disabled]="data.def">SET AS DEFAULT!</button>
+
+  <div class = "input-info">
+    <label>Name:</label>
+    <input [(ngModel)]="name" (input)="onNameChange()">
+  </div>
+
+  <div class = "input-info">
+    <label>Future default date:</label>
+    <input [(ngModel)]="futureDate">
+    <button (click)="setFutureDefault()">CONFIRM</button>
+  </div>
+  <p><b>DATE FORMAT: DD-MM-YYYY (VAKA VNESUVAJ DATUM!!!)</b></p>
+
+  <h3>Edit times:</h3>
+  <div class="edit-times-container">
+    <form [formGroup]="form">
+      <ng-container formArrayName="times">
+        <div class="edit-time" *ngFor='let time of times$; let i = index'
+             [formGroupName]='i'>
+          <ngx-timepicker-field [disabled]="time.id == null" [format]="24" [defaultTime]="time.time"
+                                (timeChanged)="onTimeChange(time.id, $event, i)"></ngx-timepicker-field>
+          <button [disabled]="time.id == null" (click)="delete(time.id, i)">DELETE</button>
+        </div>
+      </ng-container>
+    </form>
+  </div>
+  <button (click)="addTime(null, '00:00')">ADD TIME</button>
+</div>

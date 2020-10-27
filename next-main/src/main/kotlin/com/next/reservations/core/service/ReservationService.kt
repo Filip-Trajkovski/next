@@ -6,6 +6,7 @@ import com.next.reservations.core.domain.ReservationStatus
 import com.next.reservations.core.domain.ReservationTime
 import com.next.reservations.core.repository.ReservationRepository
 import org.springframework.stereotype.Service
+import org.springframework.transaction.annotation.Transactional
 import java.time.LocalDate
 
 @Service
@@ -18,17 +19,29 @@ class ReservationService(private val repository: ReservationRepository) {
         return repository.save(reservation)
     }
 
-    fun removeReservationDate(id: Long): Reservation {
+    @Transactional
+    fun removeReservationsByIds(ids: List<Long>){
+        ids.forEach { removeReservation(it) }
+    }
+
+    fun removeReservation(id: Long): Reservation {
         val reservation = findById(id)
+        reservation.status = ReservationStatus.REMOVED
+        setPreviousReservationDateTime(reservation)
+        return repository.save(reservation)
+    }
+
+    fun setPreviousReservationDateTime(reservation: Reservation){
         reservation.previousReservationDate = reservation.reservationDate
         reservation.previousReservationTime = reservation.reservationTime!!.time
         reservation.reservationDate = null
         reservation.reservationTime = null
-        return repository.save(reservation)
+        repository.save(reservation)
     }
 
     fun rejectReservation(id: Long): Reservation {
         val reservation = findById(id)
+        setPreviousReservationDateTime(reservation)
         reservation.status = ReservationStatus.REJECTED
         return repository.save(reservation)
     }
@@ -58,4 +71,9 @@ class ReservationService(private val repository: ReservationRepository) {
         return repository.findById(id).orElseThrow()
     }
 
+    fun findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(status: List<ReservationStatus>,
+                                                                       reservationTimeIds: List<Long>,
+                                                                       afterDate: LocalDate): List<Reservation> {
+        return repository.findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(status, reservationTimeIds, afterDate)
+    }
 }

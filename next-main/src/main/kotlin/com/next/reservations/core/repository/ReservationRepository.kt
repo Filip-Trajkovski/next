@@ -8,4 +8,8 @@ import java.time.LocalDate
 interface ReservationRepository : JpaRepository<Reservation, Long> {
     fun findAllByStatus(status: ReservationStatus): List<Reservation>
     fun findAllByStatusInAndReservationDate(status: List<ReservationStatus>, date: LocalDate): List<Reservation>
+
+    fun findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(status: List<ReservationStatus>,
+                                                                       reservationDateIds: List<Long>,
+                                                                       reservationDate: LocalDate): List<Reservation>
 }

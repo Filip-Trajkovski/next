@@ -1,0 +1,27 @@
+.edit-times-container{
+  width: 270px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.edit-time{
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  & > ngx-timepicker-field {
+    width: 70%;
+  }
+
+  & > button {
+    width: 25%;
+  }
+}
+
+.set-default{
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.input-info {
+  width: 100%
+}

@@ -1,0 +1,33 @@
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Default</th>
+      <th>Future default start date</th>
+      <th>Edit times</th>
+      <th>Delete configuration</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let config of configs | async">
+      <td>{{config.name}}</td>
+      <td>
+        <mat-checkbox [disabled]="true" [checked]="config.default">Default?</mat-checkbox>
+      </td>
+      <td>{{config.defaultStartDate}}</td>
+      <td>
+        <button (click)="openEditTimes(config.id, config.default, config.name)">Edit</button>
+      </td>
+      <td>
+        <button [disabled]="config.default == true" (click)="openDelete(config.id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <button (click)="openAddNew()">ADD NEW CONFIG</button>
+  <div *ngIf = "addNew">
+    <input [(ngModel)]="newName">
+    <button (click)="addNewConfig()">SAVE</button>
+  </div>
+</div>

@@ -12,7 +12,7 @@ import {MatDatepicker} from "@angular/material";
   styleUrls: ["reservation-create.view.scss"]
 })
 export class ReservationCreateView implements OnInit {
-  @ViewChild('picker')
+  @ViewChild('picker', {read: {}, static: false})
   private picker: MatDatepicker<string>;
 
   form: FormGroup = this._formDefinition;
@@ -46,7 +46,7 @@ export class ReservationCreateView implements OnInit {
     })
   }
 
-  onSubmit(){
+  onSubmit() {
     const date = this.form.get('date').value;
     const parsedDate = new Date(date);
     const formattedDate = moment(parsedDate).format("YYYY-MM-DD");
@@ -54,7 +54,7 @@ export class ReservationCreateView implements OnInit {
     this._service.makeReservation({...this.form.value, date: formattedDate}).subscribe();
   }
 
-  onDatepickerInputClick(){
+  onDatepickerInputClick() {
     this.picker.open();
   }
 }

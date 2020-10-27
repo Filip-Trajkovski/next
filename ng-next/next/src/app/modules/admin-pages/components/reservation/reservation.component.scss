@@ -1,0 +1,22 @@
+.reservation-container {
+  width: 650px;
+  height: auto;
+  display: flex;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.reservation-details, .reservation-dates {
+  width: 50%;
+
+  & > p {
+    height: 18px;
+  }
+}
+
+span {
+  background-color: #5bd311;
+  padding: 3px;
+  border-radius: 4px;
+}
+

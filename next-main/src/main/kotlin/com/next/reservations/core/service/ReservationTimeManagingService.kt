@@ -1,19 +1,19 @@
 package com.next.reservations.core.service
 
-import com.next.reservations.core.domain.Reservation
 import com.next.reservations.core.domain.ReservationStatus
 import com.next.reservations.core.domain.ReservationTime
 import com.next.reservations.core.domain.ReservationTimeConfiguration
 import org.springframework.stereotype.Service
 import java.time.LocalDate
-import java.util.*
 import java.util.stream.Collectors
+import javax.transaction.Transactional
 
 
 @Service
 class ReservationTimeManagingService(private val reservationTimeService: ReservationTimeService,
                                      private val reservationTimeConfigurationService: ReservationTimeConfigurationService,
-                                     private val reservationService: ReservationService) {
+                                     private val reservationService: ReservationService,
+                                     private val reservationManagingService: ReservationManagingService) {
 
     fun findUnreservedTimesForDate(date: LocalDate, timeConfiguration: ReservationTimeConfiguration): List<ReservationTime> {
 
@@ -34,6 +34,27 @@ class ReservationTimeManagingService(private val reservationTimeService: Reserva
         else
             reservationTimeConfigurationService.findByDefaultConfigTrue()
 
+    }
+
+    @Transactional
+    fun deleteReservationTimeConfig(id: Long) {
+        reservationTimeConfigurationService.validateCanDelete(id)
+
+        val reservationTimes = reservationTimeService.findAllByReservationTimeConfigId(id)
+
+        reservationTimes.forEach { deleteReservationTime(it.id) }
+
+        reservationTimeConfigurationService.deleteById(id)
+    }
+
+    @Transactional
+    fun deleteReservationTime(reservationTimeId: Long) {
+        val reservationsForRemoval = reservationManagingService.findAllActiveReservationsByReservationTime(reservationTimeId)
+                .map { it.id }
+
+        reservationService.removeReservationsByIds(reservationsForRemoval)
+
+        reservationTimeService.delete(reservationTimeId)
     }
 
 }

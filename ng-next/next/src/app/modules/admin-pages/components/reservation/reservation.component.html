@@ -1,0 +1,15 @@
+<div class="reservation-container">
+  <div class="reservation-details">
+    <p>NAME: <span>{{reservation.fullName}}</span></p>
+    <p>EMAIL:  <span>{{reservation.email}}</span></p>
+    <p>PHONE NUMBER: <span>{{reservation.phoneNumber}}</span></p>
+    <p>NUMBER OF PLAYERS:  <span>{{reservation.numberOfPlayers}} играчи</span></p>
+    <p>STATUS:  <span>{{handleStatus(reservation.status)}}</span></p>
+  </div>
+  <div class="reservation-dates">
+    <p>Previous date:</p>
+    <p><span>{{reservation.previousReservationTimeDate}}</span></p>
+    <p>Current date:</p>
+    <p><span>{{reservation.currentReservationTimeDate}}</span></p>
+  </div>
+</div>

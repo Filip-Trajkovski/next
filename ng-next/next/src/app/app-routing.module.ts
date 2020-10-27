@@ -5,7 +5,11 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./modules/home-page/home-page.module').then(m => m.HomePageModule),
-    data: { public: true }
+    data: { public: true },
+  },
+  {
+    path: 'admin-pages',
+    loadChildren: () => import('./modules/admin-pages/admin-pages.module').then(m => m.AdminPagesModule)
   }
 ];
 

@@ -1,5 +1,5 @@
 package com.next.reservations.core.domain
 
 enum class ReservationStatus {
-    PENDING, ACCEPTED, REJECTED, REMOVED
+    PENDING, ACCEPTED, REJECTED, REMOVED, FINISHED
 }

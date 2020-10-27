@@ -10,7 +10,8 @@ insert into reservations.reservation_statuses(id, name)
 values (0, 'Pending'),
        (1, 'Accepted'),
        (2, 'Rejected'),
-       (3, 'Removed');
+       (3, 'Removed'),
+       (4, 'Finished');
 
 create table reservations.reservation_time_configurations
 (

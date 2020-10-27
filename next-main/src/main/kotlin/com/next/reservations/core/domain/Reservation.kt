@@ -3,6 +3,7 @@ package com.next.reservations.core.domain
 import com.next.shared.domain.BaseEntity
 import java.time.LocalDate
 import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 import javax.persistence.*
 
 @Entity
@@ -27,4 +28,20 @@ class Reservation (
 
     @Column(name = "previous_reservation_time")
     var previousReservationTime: LocalTime?
-): BaseEntity()
+): BaseEntity() {
+    fun getCurrentReservationTimeDate(): String {
+        if(reservationDate == null || reservationTime == null) {
+            return ""
+        } else {
+            return "${reservationDate.toString()} ${reservationTime!!.time.format(DateTimeFormatter.ISO_LOCAL_TIME)}"
+        }
+    }
+
+    fun getPreviousReservationTimeDate(): String {
+        if(previousReservationDate == null || previousReservationTime == null) {
+            return ""
+        } else {
+            return "${previousReservationDate.toString()} ${previousReservationTime!!.format(DateTimeFormatter.ISO_LOCAL_TIME)}"
+        }
+    }
+}

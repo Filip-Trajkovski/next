@@ -1,10 +1,10 @@
 package com.next.reservations.web.mapper
 
 import com.next.reservations.core.domain.ReservationTime
+import com.next.reservations.core.domain.ReservationTimeConfiguration
 import com.next.reservations.core.service.ReservationTimeConfigurationService
 import com.next.reservations.core.service.ReservationTimeManagingService
 import com.next.reservations.core.service.ReservationTimeService
-import com.next.reservations.web.request.ReservationTimeConfigurationRequest
 import com.next.reservations.web.request.ReservationTimeRequest
 import com.next.reservations.web.response.ReservationTimeResponse
 import com.next.shared.domain.Option
@@ -33,21 +33,6 @@ class ReservationTimeMapper(private val reservationTimeService: ReservationTimeS
                 .id
     }
 
-    fun createOrUpdateConfiguration(reservationTimeConfigurationRequest: ReservationTimeConfigurationRequest): Long {
-
-        val date =
-                if (reservationTimeConfigurationRequest.defaultStartDate == null)
-                    null
-                else {
-                    val dateParts = reservationTimeConfigurationRequest.defaultStartDate.split("-")
-                            .map { it.toInt() }
-                    LocalDate.of(dateParts[0], dateParts[1], dateParts[2])
-                }
-
-        return reservationTimeConfigurationService.createOrUpdate(reservationTimeConfigurationRequest.id,
-                reservationTimeConfigurationRequest.name, date).id
-    }
-
     fun getTimesForDate(date: String): List<Option> {
 
         val dateParts = date.split("-").map { it.toInt() }
@@ -57,6 +42,10 @@ class ReservationTimeMapper(private val reservationTimeService: ReservationTimeS
 
         return reservationTimeManagingService.findUnreservedTimesForDate(chosenDate, configForDate)
                 .map { Option(it.id, it.time.toString()) }
+    }
+
+    fun deleteById(id: Long) {
+        reservationTimeManagingService.deleteReservationTime(id)
     }
 
     private fun convertReservationTimeToReservationTimeResponse(reservationTime: ReservationTime): ReservationTimeResponse {

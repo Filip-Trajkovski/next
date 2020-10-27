@@ -5,14 +5,13 @@ import com.next.reservations.core.domain.ReservationStatus
 import com.next.reservations.web.request.ReservationRequest
 import org.springframework.stereotype.Service
 import java.time.LocalDate
-import java.util.*
-import java.util.stream.Collectors
 import javax.transaction.Transactional
 
 @Service
 class ReservationManagingService(private val reservationService: ReservationService,
                                  private val reservationDetailsService: ReservationDetailsService,
-                                 private val reservationTimeService: ReservationTimeService) {
+                                 private val reservationTimeService: ReservationTimeService,
+                                 private val reservationTimeConfigurationService: ReservationTimeConfigurationService) {
 
     @Transactional
     fun createReservation(reservationRequest: ReservationRequest): Reservation {
@@ -30,4 +29,75 @@ class ReservationManagingService(private val reservationService: ReservationServ
                 reservationDetails, reservationTime, localDate)
     }
 
+
+    fun findAllActiveReservationsByConfig(configId: Long): List<Reservation> {
+        val reservationTimeIds = reservationTimeService.findAllByReservationTimeConfigId(configId).map { it.id }
+
+        val reservations =
+                reservationService.findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(listOf(ReservationStatus.ACCEPTED, ReservationStatus.PENDING),
+                        reservationTimeIds, LocalDate.now().minusDays(1))
+
+        return reservations
+    }
+
+    fun findAllActiveReservationsByReservationTime(reservationTimeId: Long): List<Reservation> {
+        val reservations =
+                reservationService.findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(listOf(ReservationStatus.ACCEPTED, ReservationStatus.PENDING),
+                        listOf(reservationTimeId), LocalDate.now().minusDays(1))
+
+        return reservations
+    }
+
+    fun findAllInvalidByNewFutureDefaultDate(date: LocalDate): List<Reservation> {
+
+        val currentFutureDateConfig = reservationTimeConfigurationService.findFutureDefault()
+        val defaultConfig = reservationTimeConfigurationService.findByDefaultConfigTrue()
+
+        val futureDateReservations = if (currentFutureDateConfig != null) {
+            val currentFutureDateReservationTimes = reservationTimeService.findAllByReservationTimeConfigId(currentFutureDateConfig.id).map { it.id }
+            val futureDateReservations = reservationService.findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(
+                    listOf(ReservationStatus.ACCEPTED, ReservationStatus.PENDING), currentFutureDateReservationTimes, LocalDate.now())
+
+            futureDateReservations
+        } else listOf()
+
+        val defaultReservationTimes = reservationTimeService.findAllByReservationTimeConfigId(defaultConfig.id).map{it.id}
+        val defaultInvalidReservations = reservationService.findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(
+                listOf(ReservationStatus.ACCEPTED, ReservationStatus.PENDING), defaultReservationTimes, date.minusDays(1))
+
+        return futureDateReservations.union(defaultInvalidReservations).toList()
+    }
+
+    @Transactional
+    fun changeDefaultConfig(newDefaultConfigId: Long) {
+        val currentDefault = reservationTimeConfigurationService.findByDefaultConfigTrue()
+        val reservationsForRemoval = findAllActiveReservationsByConfig(currentDefault.id).map { it.id }
+        reservationService.removeReservationsByIds(reservationsForRemoval)
+        reservationTimeConfigurationService.setAsDefault(newDefaultConfigId)
+    }
+
+    @Transactional
+    fun setNewFutureDefault(id: Long, newFutureDefaultDate: LocalDate) {
+        val reservationsForRemoval = findAllInvalidByNewFutureDefaultDate(newFutureDefaultDate)
+        reservationService.removeReservationsByIds(reservationsForRemoval.map { it.id })
+        reservationTimeConfigurationService.removeFutureDefaultStartDate()
+        reservationTimeConfigurationService.setNewFutureDefaultStartDate(id, newFutureDefaultDate)
+    }
+
+
+
+    fun validateDate(date: String){
+        val parts = date.split("-").map { it.toInt() }
+        if(parts.size != 3)
+            throw RuntimeException("Invalid date")
+
+        if(parts[0]<1 || parts[0]>31)
+            throw RuntimeException("Invalid date")
+
+        if(parts[1]<1 || parts[1]>12)
+            throw RuntimeException("Invalid date")
+
+        if(parts[2]<2020 || parts[2]>2025)
+            throw RuntimeException("Invalid date")
+    }
 }

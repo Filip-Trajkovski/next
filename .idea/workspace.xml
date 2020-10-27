@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aa06871-61e4-49a0-8683-97f9c0b080b2" name="Default Changelist" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/ng-next/next/src/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeConfigController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeConfigMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/response/ReservationResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/response/ReservationTimeConfigResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/admin-pages-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/admin-pages.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/components/reservation/reservation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/components/reservation/reservation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/components/reservation/reservation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/interfaces/reservation-time-config.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/interfaces/reservation-time.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservation-time-config.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservation-time.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservations-admin.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,7 +39,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f74b383-8fd3-4e52-bfea-190e1581206d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f74b383-8fd3-4e52-bfea-190e1581206d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_2_51.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/next-main/next.next-main.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/next-main/next.next-main.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/next-main/next.next-main.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/next-main/next.next-main.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-main/build/classes/java/main/com/next/main/NextMain.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/next-main/build/classes/java/main/com/next/reservations/config/FlywayConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/next-main/build/classes/java/main/com/next/reservations/core/domain/AlternativeReservationTimeDateRange.class" beforeDir="false" />
@@ -37,11 +64,55 @@
       <change beforePath="$PROJECT_DIR$/next-main/build/classes/java/main/com/next/reservations/core/service/ReservationTimeService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/next-main/build/resources/main/db/migration/V1__reservations_schema_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/build/resources/main/db/migration/V1__reservations_schema_init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-main/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-next/next/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/main/NextMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/api/ReservationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/api/ReservationTimeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/config/FlywayConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/domain/AlternativeReservationTimeDateRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/domain/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/domain/ReservationDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/domain/ReservationStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/domain/ReservationTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/domain/ReservationTimeConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/AlternativeRTDateRangeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/ReservationDetailsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/ReservationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/ReservationTimeConfigurationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/ReservationTimeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/AlternativeRTDateRangeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationManagingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationTimeConfigurationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationTimeManagingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationTimeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/mapper/ReservationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/mapper/ReservationTimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationTimeConfigurationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationTimeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/response/ReservationTimeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/java/com/next/shared/domain/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/Reservation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/Reservation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationStatus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationStatus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/repository/ReservationRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/repository/ReservationRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationManagingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationManagingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeConfigurationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeConfigurationService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeManagingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeManagingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-main/src/main/resources/db/migration/V1__reservations_schema_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/next-main/src/main/resources/db/migration/V1__reservations_schema_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-next/next/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-next/next/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/enums/reservation-status.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/enums/reservation-status.enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/interfaces/reservation.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/interfaces/reservation.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-next/next/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-next/next/src/styles.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -148,41 +219,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/navigation-bar/navigation-bar.view.html">
+        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="1680">
+              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.html">
+        <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="-54">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.ts">
+        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+            <state relative-caret-position="1078">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.scss">
+        <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationManagingService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+            <state relative-caret-position="64">
+              <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservations-admin.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeConfigController.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservation-time-config.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,6 +334,9 @@
       <find>maps</find>
       <find>styles</find>
       <find>green</find>
+      <find>value</find>
+      <find>ViewChild</find>
+      <find>.split</find>
     </findStrings>
     <replaceStrings>
       <replace>long</replace>
@@ -228,57 +353,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/repository/ReservationTimeRepository.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/ReservationTimeRepository.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/shared/domain/BaseEntity.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationTime.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeService.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/AlternativeReservationTimeDateRange.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/Reservation.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationDetails.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationTimeService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationTimeConfigurationService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationDetailsService.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationDetailsService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationService.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/AlternativeRTDateRangeService.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/AlternativeRTDateRangeService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeManagingService.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationTimeManagingService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationManagingService.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/service/ReservationManagingService.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/response/ReservationTimeResponse.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/response/ReservationTimeResponse.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationRequest.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationTimeConfigurationRequest.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationTimeRequest.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/mapper/ReservationMapper.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/mapper/ReservationTimeMapper.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeController.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/api/ReservationTimeController.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationController.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/api/ReservationController.java" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationTimeConfiguration.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeConfigurationRequest.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeRequest.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationRequest.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeMapper.kt" />
-        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeConfigurationService.kt" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/upper-home-page-section/upper-home-page-section.view.scss" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/reservation-home-page-section/reservation-home-page-section.view.scss" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/contact-us/contact-us.view.html" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/contact-us/contact-us.view.scss" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/about-us/about-us.view.scss" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/navigation-bar/navigation-bar.view.html" />
-        <option value="$PROJECT_DIR$/ng-next/next/angular.json" />
         <option value="$PROJECT_DIR$/ng-next/next/src/styles.scss" />
         <option value="$PROJECT_DIR$/ng-next/next/src/theme.scss" />
         <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.scss" />
-        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.ts" />
         <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.html" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/navigation-bar/navigation-bar.view.html" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/admin-pages-routing.module.ts" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/response/ReservationTimeConfigResponse.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/repository/ReservationRepository.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/Reservation.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationService.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationStatus.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/resources/db/migration/V1__reservations_schema_init.sql" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeMapper.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeManagingService.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeController.kt" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/interfaces/reservation-time.interface.ts" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeRequest.kt" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservation-time.service.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/interfaces/reservation-time-config.interface.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservations.service.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.scss" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/enums/reservation-status.enum.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/enums/reservation-status.enum.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/interfaces/reservation.interface.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/components/reservation/reservation.component.ts" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/response/ReservationResponse.kt" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/components/reservation/reservation.component.html" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/components/reservation/reservation.component.scss" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.html" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.scss" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/package.json" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.ts" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/admin-pages.module.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.html" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.ts" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationController.kt" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservations-admin.service.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.ts" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeConfigurationService.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeConfigController.kt" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservation-time-config.service.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.ts" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.scss" />
+        <option value="$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.html" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationManagingService.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt" />
+        <option value="$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeConfigMapper.kt" />
       </list>
     </option>
   </component>
@@ -306,6 +431,43 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="next" type="58d84e3e:PackageViewProjectNode" />
+              <item name="next.next-main.main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="next" type="58d84e3e:PackageViewProjectNode" />
+              <item name="next.next-main.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.next" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="next" type="58d84e3e:PackageViewProjectNode" />
+              <item name="next.next-main.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.next" type="1f31426a:PackageElementNode" />
+              <item name="reservations" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="next" type="58d84e3e:PackageViewProjectNode" />
+              <item name="next.next-main.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.next" type="1f31426a:PackageElementNode" />
+              <item name="reservations" type="1f31426a:PackageElementNode" />
+              <item name="core" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="next" type="58d84e3e:PackageViewProjectNode" />
+              <item name="next.next-main.main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.next" type="1f31426a:PackageElementNode" />
+              <item name="reservations" type="1f31426a:PackageElementNode" />
+              <item name="core" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,6 +478,173 @@
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
               <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="next-main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="migration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="ng-next" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -323,106 +652,6 @@
               <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="ng-next" type="462c0819:PsiDirectoryNode" />
               <item name="next" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="datepicker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="datepicker" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
-              <item name="datepicker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
-              <item name="esm5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
-              <item name="esm5" type="462c0819:PsiDirectoryNode" />
-              <item name="datepicker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="next" type="b2602c69:ProjectViewProjectNode" />
-              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
-              <item name="select" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
@@ -456,7 +685,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="home-page" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
@@ -466,7 +695,76 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="home-page" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="reservation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="dialogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="dialogs" type="462c0819:PsiDirectoryNode" />
+              <item name="edit-times" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="dialogs" type="462c0819:PsiDirectoryNode" />
+              <item name="reservation-removal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -477,8 +775,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="home-page" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="reservation-time-configurations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
@@ -488,9 +787,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="home-page" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation-bar" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-pages" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
@@ -501,6 +799,28 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
@@ -524,6 +844,19 @@
               <item name="shared" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="reservations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="ng-next" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="reservations" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="next" type="b2602c69:ProjectViewProjectNode" />
@@ -557,12 +890,33 @@
               <item name="next" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlin-stdlib-1.4.10.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.10" type="70bed36:NamedLibraryElementNode" />
+              <item name="kotlin-stdlib-1.4.10.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Course" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -620,7 +974,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Spring Boot.NextMain">
     <configuration name="next [compileKotlin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -672,8 +1026,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="Spring Boot.NextMain" />
+        <item itemvalue="npm.start" />
         <item itemvalue="Gradle.next [compileKotlin]" />
       </list>
     </recent_temporary>
@@ -710,7 +1064,12 @@
       <workItem from="1602516578139" duration="389000" />
       <workItem from="1602516984204" duration="14516000" />
       <workItem from="1602538739258" duration="5000" />
-      <workItem from="1602957808282" duration="5793000" />
+      <workItem from="1602957808282" duration="5841000" />
+      <workItem from="1603017002060" duration="18739000" />
+      <workItem from="1603052635587" duration="6655000" />
+      <workItem from="1603628048877" duration="11560000" />
+      <workItem from="1603645514039" duration="17640000" />
+      <workItem from="1603836645970" duration="3110000" />
     </task>
     <task id="LOCAL-00001" summary="WIP">
       <created>1600211327132</created>
@@ -747,18 +1106,25 @@
       <option name="project" value="LOCAL" />
       <updated>1602535638348</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="WIP">
+      <created>1602963676701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602963676701</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157793000" />
+    <option name="totallyTimeSpent" value="215545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23288591" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49801588" visible="true" weight="0.19865772" />
+      <window_info id="Structure" order="1" sideWeight="0.5019841" side_tool="true" weight="0.2080537" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -767,8 +1133,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="0" sideWeight="0.49932885" weight="0.4036827" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49731544" visible="true" weight="0.4022663" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31303117" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731544" weight="0.15580736" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.19546743" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3286119" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -777,7 +1143,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.33144477" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.45609066" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5026846" side_tool="true" weight="0.43342775" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49798658" weight="0.32719547" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.3286119" />
@@ -793,7 +1159,7 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.3295302" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.19261745" />
+      <window_info anchor="right" id="Database" order="9" weight="0.17651007" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -804,349 +1170,350 @@
     <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/request/ReservationTimeRequest.java">
+    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/core/core.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/mapper/ReservationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="29" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="e#42#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/web/mapper/ReservationTimeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#35#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/api/ReservationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/api/ReservationTimeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationDetails.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#43#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationStatus.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationTime.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="15" />
-          <folding>
-            <element signature="e#43#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/Reservation.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="e#43#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/AlternativeReservationTimeDateRange.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding>
-            <element signature="e#43#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/main/NextMain.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/domain/ReservationTimeConfiguration.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#43#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.11.2/4f0c6c172892b0fb6b7f09a54cc616b9f9516bca/jackson-databind-2.11.2-sources.jar!/com/fasterxml/jackson/databind/annotation/JsonSerialize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeConfigurationRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/shared/domain/BaseEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
-          <folding>
-            <element signature="e#35#389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/request/ReservationTimeRequest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeConfigurationService.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="e#44#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/main/NextMain.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeMapper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="e#42#658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/pages/home-page/home-page.page.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/upper-home-page-section/upper-home-page-section.view.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/reservation-home-page-section/reservation-home-page-section.view.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/reservation-home-page-section/reservation-home-page-section.view.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/contact-us/contact-us.view.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/contact-us/contact-us.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/pages/home-page/home-page.page.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/upper-home-page-section/upper-home-page-section.view.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/about-us/about-us.view.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/navigation-bar/navigation-bar.view.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/typings/select/select.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/_theming.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4911" column="7" selection-start-line="4911" selection-start-column="7" selection-end-line="4911" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/typings/datepicker/datepicker-toggle.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/datepicker/typings/datepicker-toggle.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/typings/esm5/datepicker/datepicker.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1548">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="80" column="10" lean-forward="true" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+        <state relative-caret-position="122">
+          <caret line="7887" column="46" selection-start-line="7887" selection-start-column="46" selection-end-line="7887" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        <state relative-caret-position="180">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.html">
+    <entry file="file://$PROJECT_DIR$/ng-next/next/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="82">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/home-page/views/navigation-bar/navigation-bar.view.html">
+    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/dialog/typings/dialog-ref.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="177">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/ngx-material-timepicker/src/app/material-timepicker/components/timepicker-field/ngx-timepicker-field.component.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_time_configurations" />
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations" />
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_times" />
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/shared/modules/reservations/views/reservation-create/reservation-create.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="5484" column="4" selection-start-line="5484" selection-start-column="4" selection-end-line="5484" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/typings/input/input.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/node_modules/@angular/material/input/typings/input.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="94" column="9" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="604" column="16" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/config-create/config-create.dialog.html" />
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/config-create/config-create.dialog.ts" />
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/admin-pages.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationTimeConfigurationService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationTimeConfigMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/java/com/next/reservations/core/repository/AlternativeRTDateRangeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/pages/reservation-time-configurations/reservation-time-configurations.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservation-time-config.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/api/ReservationTimeConfigController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/services/reservations-admin.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/reservation-removal/reservation-removal.dialog.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_time_configurations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_time_configurations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_time_configurations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_time_configurations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_times">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_times">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_times">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservation_times">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/core/service/ReservationManagingService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/next-main/src/main/kotlin/com/next/reservations/web/mapper/ReservationMapper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f74b383-8fd3-4e52-bfea-190e1581206d/database/next_db/schema/reservations/table/reservations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-next/next/src/app/modules/admin-pages/dialogs/edit-times/edit-times.dialog.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
         </state>
       </provider>
     </entry>

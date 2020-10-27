@@ -70,7 +70,7 @@ subprojects {
         compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.3.3.RELEASE'
         compile group: 'org.postgresql', name: 'postgresql', version: '42.2.16'
         compile group: 'org.flywaydb', name: 'flyway-core', version: '5.0.3'
-        compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: '1.1.51'
+        compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: '1.4.10'
         compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.9.7'
 
     }

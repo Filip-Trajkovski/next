@@ -30,6 +30,7 @@ class ReservationTimeConfigurationService(private val repository: ReservationTim
         removePreviousDefault()
         val newDefault = findById(id)
         newDefault.defaultConfig = true
+        newDefault.defaultStartDate = null
         repository.save(newDefault)
     }
 
@@ -51,4 +52,43 @@ class ReservationTimeConfigurationService(private val repository: ReservationTim
         return repository.findByDefaultStartDateIsNotNull()
     }
 
+    fun removeFutureDefaultStartDate(){
+        val futureDefault = findFutureDefault()
+        if(futureDefault != null){
+            futureDefault.defaultStartDate = null
+            repository.save(futureDefault)
+        }
+    }
+
+    fun setNewFutureDefaultStartDate(id: Long, newFutureDefaultStartDate: LocalDate){
+        val config = findById(id)
+        config.defaultStartDate = newFutureDefaultStartDate
+
+        repository.save(config)
+    }
+
+    fun deleteById(id: Long) = repository.deleteById(id)
+
+    fun findAll(): List<ReservationTimeConfiguration> =
+            repository.findAll()
+
+    fun validateCanDelete(id: Long) {
+        val config = findById(id)
+        if (config.defaultConfig)
+            throw RuntimeException("You can't delete the default config!!!")
+    }
+
+    fun changeName(id: Long, name: String) {
+        val config = findById(id)
+        config.name = name
+        repository.save(config)
+    }
+
+    fun addNew(name: String): ReservationTimeConfiguration {
+        return repository.save(ReservationTimeConfiguration(
+                name = name,
+                defaultStartDate = null,
+                defaultConfig = false
+        ))
+    }
 }
