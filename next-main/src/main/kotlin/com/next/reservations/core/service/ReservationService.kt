@@ -11,6 +11,13 @@ import java.time.LocalDate
 
 @Service
 class ReservationService(private val repository: ReservationRepository) {
+
+    val activeReservationStatuses = listOf(ReservationStatus.ACCEPTED, ReservationStatus.PENDING)
+
+    val inactiveReservationStatuses = listOf(ReservationStatus.REMOVED, ReservationStatus.REJECTED,
+            ReservationStatus.FINISHED)
+
+
     fun create(status: ReservationStatus, reservationDetails: ReservationDetails, reservationTime: ReservationTime,
                reservationDate: LocalDate): Reservation {
         val reservation = Reservation(status, reservationDetails,
@@ -20,7 +27,7 @@ class ReservationService(private val repository: ReservationRepository) {
     }
 
     @Transactional
-    fun removeReservationsByIds(ids: List<Long>){
+    fun removeReservationsByIds(ids: List<Long>) {
         ids.forEach { removeReservation(it) }
     }
 
@@ -31,7 +38,7 @@ class ReservationService(private val repository: ReservationRepository) {
         return repository.save(reservation)
     }
 
-    fun setPreviousReservationDateTime(reservation: Reservation){
+    fun setPreviousReservationDateTime(reservation: Reservation) {
         reservation.previousReservationDate = reservation.reservationDate
         reservation.previousReservationTime = reservation.reservationTime!!.time
         reservation.reservationDate = null
@@ -59,8 +66,10 @@ class ReservationService(private val repository: ReservationRepository) {
         return repository.save(reservation)
     }
 
-    fun findAllByStatus(status: ReservationStatus): List<Reservation> {
-        return repository.findAllByStatus(status)
+    fun findAllByStatusAndDateAfter(status: ReservationStatus, date: LocalDate): List<Reservation> {
+        return if(status in activeReservationStatuses)
+            repository.findAllByStatusAndReservationDateAfter(status, date)
+        else repository.findAllByStatusAndPreviousReservationDateAfter(status, date)
     }
 
     fun findAllByStatusInAndReservationDate(status: List<ReservationStatus>, date: LocalDate): List<Reservation> {

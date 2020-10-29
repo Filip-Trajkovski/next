@@ -4,6 +4,7 @@ import com.next.reservations.core.domain.ReservationTimeConfiguration
 import com.next.reservations.core.service.ReservationManagingService
 import com.next.reservations.core.service.ReservationTimeConfigurationService
 import com.next.reservations.core.service.ReservationTimeManagingService
+import com.next.reservations.core.utils.Utils
 import com.next.reservations.web.request.ReservationTimeConfigurationRequest
 import com.next.reservations.web.response.ReservationTimeConfigResponse
 import org.springframework.stereotype.Service
@@ -21,9 +22,7 @@ class ReservationTimeConfigMapper(private val reservationTimeConfigurationServic
                 if (reservationTimeConfigurationRequest.defaultStartDate == null)
                     null
                 else {
-                    val dateParts = reservationTimeConfigurationRequest.defaultStartDate.split("-")
-                            .map { it.toInt() }
-                    LocalDate.of(dateParts[0], dateParts[1], dateParts[2])
+                    Utils.parseDateFromString(reservationTimeConfigurationRequest.defaultStartDate)
                 }
 
         return reservationTimeConfigurationService.createOrUpdate(reservationTimeConfigurationRequest.id,
@@ -59,10 +58,7 @@ class ReservationTimeConfigMapper(private val reservationTimeConfigurationServic
     }
 
     fun changeFutureDefault(id: Long, futureDefault: String) {
-        reservationManagingService.validateDate(futureDefault)
-        val parts = futureDefault.split("-").map { it.toInt() }
-
-        val date = LocalDate.of(parts[2], parts[1], parts[0])
+        val date = Utils.parseDateFromString(futureDefault)
 
         reservationManagingService.setNewFutureDefault(id, date)
     }

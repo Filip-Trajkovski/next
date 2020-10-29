@@ -12,4 +12,8 @@ interface ReservationRepository : JpaRepository<Reservation, Long> {
     fun findAllByStatusInAndReservationTimeIdInAndReservationDateAfter(status: List<ReservationStatus>,
                                                                        reservationDateIds: List<Long>,
                                                                        reservationDate: LocalDate): List<Reservation>
+
+    fun findAllByStatusAndReservationDateAfter(status: ReservationStatus, date: LocalDate): List<Reservation>
+
+    fun findAllByStatusAndPreviousReservationDateAfter(status: ReservationStatus, date: LocalDate): List<Reservation>
 }

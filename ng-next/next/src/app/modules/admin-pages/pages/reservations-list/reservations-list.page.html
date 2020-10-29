@@ -1,0 +1,9 @@
+<div >
+  <div class="buttons"><button *ngFor="let status of (statuses$ | async)">{{status.label}}</button></div>
+</div>
+
+<div>
+  <div *ngFor="let reservation of (reservations$ | async)">
+  <reservation [reservation]="reservation"></reservation>
+  </div>
+</div>

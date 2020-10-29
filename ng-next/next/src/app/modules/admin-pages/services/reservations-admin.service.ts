@@ -2,6 +2,8 @@ import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Reservation} from "../../shared/interfaces/reservation.interface";
+import {ReservationStatus} from "../../shared/enums/reservation-status.enum";
+import {Option} from "../../shared/interfaces/option.interface";
 
 @Injectable()
 export class ReservationsAdminService {
@@ -23,5 +25,13 @@ export class ReservationsAdminService {
 
   findAllInvalidByNewFutureDefaultDate(futureDefault: string): Observable<Reservation[]> {
     return this._http.get<Reservation[]>(`${this.path}/by-new-future-default/${futureDefault}`);
+  }
+
+  findAllByStatusAndDateAfter(status: string, date: string):Observable<Reservation[]> {
+    return this._http.get<Reservation[]>(`${this.path}/find-all-by-status?status=${status}&date=${date}`);
+  }
+
+  findAllStatuses(): Observable<Option[]> {
+    return this._http.get<Option[]>(`${this.path}/statuses`);
   }
 }

@@ -3,6 +3,7 @@ package com.next.reservations.api
 import com.next.reservations.web.mapper.ReservationMapper
 import com.next.reservations.web.request.ReservationRequest
 import com.next.reservations.web.response.ReservationResponse
+import com.next.shared.domain.Option
 import org.springframework.web.bind.annotation.*
 
 
@@ -29,4 +30,11 @@ class ReservationController(private val mapper: ReservationMapper) {
     @GetMapping("/by-new-future-default/{newFutureDefault}")
     fun findAllInvalidByNewFutureDefault(@PathVariable newFutureDefault: String): List<ReservationResponse> =
             mapper.findAllInvalidByFutureDefaultDate(newFutureDefault)
+
+    @GetMapping("find-all-by-status")
+    fun findByStatus(@RequestParam("status") status: String, @RequestParam("date") date: String): List<ReservationResponse> =
+            mapper.findAllByStatusAndDateAfter(status, date)
+
+    @GetMapping("statuses")
+    fun findAllStatuses(): List<Option> = mapper.getAllStatuses()
 }

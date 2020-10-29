@@ -4,7 +4,7 @@ import {AdminPagesRoutingModule} from "./admin-pages-routing.module";
 import {ReservationTimeService} from "./services/reservation-time.service";
 import {ReservationTimeConfigService} from "./services/reservation-time-config.service";
 import {ReservationsAdminService} from "./services/reservations-admin.service";
-import {CommonModule} from "@angular/common";
+import {CommonModule, DatePipe} from "@angular/common";
 import {
   MatCheckboxModule,
   MatDatepickerModule,
@@ -18,6 +18,7 @@ import {ReservationRemovalDialog} from "./dialogs/reservation-removal/reservatio
 import {EditTimesDialog} from "./dialogs/edit-times/edit-times.dialog";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxMaterialTimepickerModule} from "ngx-material-timepicker";
+import {ReservationsListPage} from "./pages/reservations-list/reservations-list.page";
 
 const modules = [
   AdminPagesRoutingModule,
@@ -39,7 +40,8 @@ const dialogs = [
 ];
 
 const pages = [
-  ReservationTimeConfigurationsPage
+  ReservationTimeConfigurationsPage,
+  ReservationsListPage
 ];
 
 const components = [
@@ -49,7 +51,8 @@ const components = [
 const services = [
   ReservationTimeService,
   ReservationTimeConfigService,
-  ReservationsAdminService
+  ReservationsAdminService,
+  DatePipe
 ];
 
 @NgModule({

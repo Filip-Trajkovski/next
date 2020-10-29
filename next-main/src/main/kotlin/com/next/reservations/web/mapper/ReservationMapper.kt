@@ -1,16 +1,16 @@
 package com.next.reservations.web.mapper
 
 import com.next.reservations.core.domain.Reservation
+import com.next.reservations.core.domain.ReservationStatus
 import com.next.reservations.core.service.*
+import com.next.reservations.core.utils.Utils
 import com.next.reservations.web.request.ReservationRequest
 import com.next.reservations.web.response.ReservationResponse
+import com.next.shared.domain.Option
 import org.springframework.stereotype.Service
-import java.time.LocalDate
 
 @Service
-class ReservationMapper(private val reservationTimeService: ReservationTimeService,
-                        private val reservationService: ReservationService,
-                        private val reservationDetailsService: ReservationDetailsService,
+class ReservationMapper(private val reservationService: ReservationService,
                         private val reservationTimeConfigurationService: ReservationTimeConfigurationService,
                         private val reservationManagingService: ReservationManagingService) {
 
@@ -34,14 +34,19 @@ class ReservationMapper(private val reservationTimeService: ReservationTimeServi
     }
 
     fun findAllInvalidByFutureDefaultDate(date: String): List<ReservationResponse> {
-        reservationManagingService.validateDate(date)
-        val parts = date.split("-").map { it.toInt() }
-
-        val parsedDate = LocalDate.of(parts[2], parts[1], parts[0])
+        val parsedDate = Utils.parseDateFromString(date)
 
         return reservationManagingService.findAllInvalidByNewFutureDefaultDate(parsedDate).map { convertReservationToResponse(it) }
     }
 
+
+    fun findAllByStatusAndDateAfter(status: String, date: String): List<ReservationResponse> {
+        val parsedDate = Utils.parseDateFromString(date)
+        val upperCaseStatus = status.toUpperCase()
+
+        return reservationService.findAllByStatusAndDateAfter(ReservationStatus.valueOf(upperCaseStatus), parsedDate.minusDays(1))
+                .map { convertReservationToResponse(it) }
+    }
 
     fun convertReservationToResponse(reservation: Reservation): ReservationResponse =
             ReservationResponse(
@@ -55,4 +60,8 @@ class ReservationMapper(private val reservationTimeService: ReservationTimeServi
                     previousReservationTimeDate = reservation.getPreviousReservationTimeDate(),
                     status = reservation.status.ordinal
             )
+
+    fun getAllStatuses(): List<Option> =
+            ReservationStatus.values().map { Option(it.ordinal, it.name) }
+
 }

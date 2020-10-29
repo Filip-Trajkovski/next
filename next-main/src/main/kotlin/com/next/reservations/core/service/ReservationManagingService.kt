@@ -2,6 +2,7 @@ package com.next.reservations.core.service
 
 import com.next.reservations.core.domain.Reservation
 import com.next.reservations.core.domain.ReservationStatus
+import com.next.reservations.core.utils.Utils
 import com.next.reservations.web.request.ReservationRequest
 import org.springframework.stereotype.Service
 import java.time.LocalDate
@@ -84,20 +85,4 @@ class ReservationManagingService(private val reservationService: ReservationServ
         reservationTimeConfigurationService.setNewFutureDefaultStartDate(id, newFutureDefaultDate)
     }
 
-
-
-    fun validateDate(date: String){
-        val parts = date.split("-").map { it.toInt() }
-        if(parts.size != 3)
-            throw RuntimeException("Invalid date")
-
-        if(parts[0]<1 || parts[0]>31)
-            throw RuntimeException("Invalid date")
-
-        if(parts[1]<1 || parts[1]>12)
-            throw RuntimeException("Invalid date")
-
-        if(parts[2]<2020 || parts[2]>2025)
-            throw RuntimeException("Invalid date")
-    }
 }

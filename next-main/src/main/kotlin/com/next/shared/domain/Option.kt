@@ -1,6 +1,6 @@
 package com.next.shared.domain
 
 class Option(
-        val id: Long,
+        val id: Any,
         val label: String
 )
