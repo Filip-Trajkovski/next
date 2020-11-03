@@ -1,9 +1,22 @@
-<div >
-  <div class="buttons"><button *ngFor="let status of (statuses$ | async)">{{status.label}}</button></div>
+<div>
+  <div class="buttons">
+    <mat-radio-group [(ngModel)]="selectedStatus" (change)="onFilterChange()">
+      <mat-radio-button *ngFor="let status of (statuses$ | async)" [value]="status.label">{{status.label}}</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>From date:</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" (ngModelChange)="onFilterChange()">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
 </div>
+
+
 
 <div>
   <div *ngFor="let reservation of (reservations$ | async)">
-  <reservation [reservation]="reservation"></reservation>
+    <reservation [reservation]="reservation" [showActions]="true" (refresh)="onFilterChange()"></reservation>
   </div>
 </div>

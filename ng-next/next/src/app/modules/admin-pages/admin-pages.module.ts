@@ -9,7 +9,7 @@ import {
   MatCheckboxModule,
   MatDatepickerModule,
   MatDialogModule,
-  MatInputModule,
+  MatInputModule, MatRadioModule,
   MatSelectModule
 } from "@angular/material";
 import {HttpClientModule} from "@angular/common/http";
@@ -19,6 +19,9 @@ import {EditTimesDialog} from "./dialogs/edit-times/edit-times.dialog";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgxMaterialTimepickerModule} from "ngx-material-timepicker";
 import {ReservationsListPage} from "./pages/reservations-list/reservations-list.page";
+import {MatMomentDateModule} from "@angular/material-moment-adapter";
+import {ChangeDateDialog} from "./dialogs/change-date/change-date.dialog";
+import {ReservationsService} from "../shared/modules/reservations/services/reservations.service";
 
 const modules = [
   AdminPagesRoutingModule,
@@ -29,14 +32,16 @@ const modules = [
   ReactiveFormsModule,
   NgxMaterialTimepickerModule,
   MatDatepickerModule,
-  MatSelectModule
+  MatSelectModule,
+  MatMomentDateModule
 ];
 
 const views = [];
 
 const dialogs = [
   ReservationRemovalDialog,
-  EditTimesDialog
+  EditTimesDialog,
+  ChangeDateDialog
 ];
 
 const pages = [
@@ -52,12 +57,13 @@ const services = [
   ReservationTimeService,
   ReservationTimeConfigService,
   ReservationsAdminService,
-  DatePipe
+  DatePipe,
+  ReservationsService
 ];
 
 @NgModule({
   providers: [...services],
-  imports: [...modules, MatInputModule, FormsModule],
+  imports: [...modules, MatInputModule, FormsModule, MatRadioModule],
   declarations: [...pages, ...views, ...components, ...dialogs],
   entryComponents: [...dialogs]
 })

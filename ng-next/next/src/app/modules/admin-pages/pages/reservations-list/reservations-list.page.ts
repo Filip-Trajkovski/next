@@ -1,10 +1,11 @@
-import {Component} from "@angular/core";
+import {Component, ViewChild} from "@angular/core";
 import {Observable} from "rxjs";
 import {Option} from "../../../shared/interfaces/option.interface";
 import {ReservationsAdminService} from "../../services/reservations-admin.service";
 import {Reservation} from "../../../shared/interfaces/reservation.interface";
 import {DatePipe} from "@angular/common";
-import {FormControl} from "@angular/forms";
+import {Moment} from "moment";
+import {MatDialog} from "@angular/material";
 
 @Component({
   templateUrl: "reservations-list.page.html",
@@ -15,18 +16,21 @@ export class ReservationsListPage {
   statuses$: Observable<Option[]>;
   reservations$: Observable<Reservation[]>;
 
-  dateControl: FormControl = new FormControl('');
+  selectedStatus: string;
+  selectedDate: Moment;
 
   constructor(private _service: ReservationsAdminService,
-              private _datePipe: DatePipe){
-    const todaysDate = this._datePipe.transform(new Date(), 'dd-MM-yyyy');
-
-    this.dateControl.setValue(todaysDate);
-
-    this.reservations$ = this._service.findAllByStatusAndDateAfter('Pending', todaysDate);
+              private _datePipe: DatePipe) {
+    this.reservations$ = this._service.findAllByStatusAndDateAfter('Pending', this._todaysDate);
     this.statuses$ = this._service.findAllStatuses();
 
   }
 
+  private get _todaysDate(): string {
+    return this._datePipe.transform(new Date(), 'dd-MM-yyyy');
+  }
 
+  onFilterChange() {
+    this.reservations$ = this._service.findAllByStatusAndDateAfter(this.selectedStatus, this.selectedDate.format("DD-MM-yyyy"));
+  }
 }

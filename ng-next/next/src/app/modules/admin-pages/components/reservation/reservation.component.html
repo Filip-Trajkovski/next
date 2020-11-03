@@ -1,15 +1,24 @@
 <div class="reservation-container">
-  <div class="reservation-details">
-    <p>NAME: <span>{{reservation.fullName}}</span></p>
-    <p>EMAIL:  <span>{{reservation.email}}</span></p>
-    <p>PHONE NUMBER: <span>{{reservation.phoneNumber}}</span></p>
-    <p>NUMBER OF PLAYERS:  <span>{{reservation.numberOfPlayers}} играчи</span></p>
-    <p>STATUS:  <span>{{handleStatus(reservation.status)}}</span></p>
+  <div class="details-container">
+    <div class="reservation-details">
+      <p>NAME: <span>{{reservation.fullName}}</span></p>
+      <p>EMAIL: <span>{{reservation.email}}</span></p>
+      <p>PHONE NUMBER: <span>{{reservation.phoneNumber}}</span></p>
+      <p>NUMBER OF PLAYERS: <span>{{reservation.numberOfPlayers}} играчи</span></p>
+      <p>STATUS: <span>{{handleStatus(reservation.status)}}</span></p>
+    </div>
+    <div class="reservation-dates">
+      <p>Previous date:</p>
+      <p><span>{{reservation.previousReservationTimeDate}}</span></p>
+      <p>Current date:</p>
+      <p><span>{{reservation.currentReservationTimeDate}}</span></p>
+    </div>
   </div>
-  <div class="reservation-dates">
-    <p>Previous date:</p>
-    <p><span>{{reservation.previousReservationTimeDate}}</span></p>
-    <p>Current date:</p>
-    <p><span>{{reservation.currentReservationTimeDate}}</span></p>
+  <div class="actions" *ngIf="showActions">
+    <button *ngIf="showChangeDate()" class="change-date-button" (click)="changeDateAndAccept()">
+      CHANGE DATE AND ACCEPT
+    </button>
+    <button *ngIf="showAccept()" class="accept-button" (click)="accept()">ACCEPT</button>
+    <button *ngIf="showReject()" class="reject-button" (click)="reject()">REJECT</button>
   </div>
 </div>

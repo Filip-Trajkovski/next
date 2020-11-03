@@ -2,6 +2,7 @@ package com.next.reservations.api
 
 import com.next.reservations.web.mapper.ReservationMapper
 import com.next.reservations.web.request.ReservationRequest
+import com.next.reservations.web.request.TimeChangeRequest
 import com.next.reservations.web.response.ReservationResponse
 import com.next.shared.domain.Option
 import org.springframework.web.bind.annotation.*
@@ -37,4 +38,13 @@ class ReservationController(private val mapper: ReservationMapper) {
 
     @GetMapping("statuses")
     fun findAllStatuses(): List<Option> = mapper.getAllStatuses()
+
+    @PostMapping("accept/{id}")
+    fun acceptReservation(@PathVariable id: Long) = mapper.acceptReservation(id)
+
+    @PostMapping("reject/{id}")
+    fun rejectReservation(@PathVariable id: Long) = mapper.rejectReservation(id)
+
+    @PostMapping("change-time")
+    fun changeTimeAndAccept(@RequestBody request: TimeChangeRequest) = mapper.changeTimeAndAccept(request)
 }

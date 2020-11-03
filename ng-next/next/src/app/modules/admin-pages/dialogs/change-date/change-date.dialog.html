@@ -1,0 +1,23 @@
+<div>
+  <form [formGroup]="form">
+    <mat-form-field appearance="fill" class="selected-value">
+      <mat-label>Изберете датум*</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="selected-value">
+      <mat-label>Изберете термин*</mat-label>
+      <mat-select  formControlName="reservationTimeId">
+        <mat-option [value]="null">--</mat-option>
+        <mat-option *ngFor="let reservationTime of (reservationTimes$ | async)" [value]="reservationTime.id">
+          {{reservationTime.label}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="d-flex">
+      <button (click)="onSubmit()">Резервирај</button>
+    </div>
+  </form>
+</div>

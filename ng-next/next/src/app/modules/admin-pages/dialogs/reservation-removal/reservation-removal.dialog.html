@@ -1,9 +1,9 @@
-<div>
-  <h3>Proceeding with this action will change the status of the following reservations to REMOVED:</h3>
+<div class="removal-container">
+  <p>Proceeding with this action will change the status of the following reservations to <b>REMOVED:</b></p>
   <div class="reservations-to-remove">
     <reservation *ngFor="let reservation of (reservations$ | async)" [reservation]="reservation"></reservation>
   </div>
-  <h3>Are you sure?</h3>
+  <p><b>Are you sure?</b></p>
   <div class="buttons">
     <button (click)="confirm()">YES</button>
     <button (click)="close()">NO</button>

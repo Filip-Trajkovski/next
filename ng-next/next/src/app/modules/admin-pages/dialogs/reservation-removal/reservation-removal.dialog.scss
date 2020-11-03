@@ -1,12 +1,18 @@
 .buttons {
   display: flex;
   justify-content: center;
+
   & > button {
     margin: 4px;
   }
 }
 
-.reservations-to-remove{
+.reservations-to-remove {
   max-height: 400px;
+  overflow-y: auto;
+}
+
+.removal-container {
+  height: 95%;
   overflow-y: auto;
 }

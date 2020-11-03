@@ -1,12 +1,17 @@
-.reservation-container {
+.reservation-container{
   width: 650px;
-  height: auto;
-  display: flex;
   border: 1px solid;
   padding: 5px;
 }
 
+.details-container {
+  height: auto;
+  display: flex;
+}
+
 .reservation-details, .reservation-dates {
+  min-width: 50%;
+  max-width: 50%;
   width: 50%;
 
   & > p {
@@ -20,3 +25,22 @@ span {
   border-radius: 4px;
 }
 
+.actions{
+  display: flex;
+  justify-content: flex-end;
+  & > button {
+    margin-left: 20px;
+  }
+}
+
+.accept-button {
+  background-color: #3f9d0c;
+}
+
+.reject-button {
+  background-color: orangered;
+}
+
+.change-date-button {
+  background-color: lightgoldenrodyellow;
+}

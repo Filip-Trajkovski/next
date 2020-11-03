@@ -5,14 +5,17 @@ import com.next.reservations.core.domain.ReservationStatus
 import com.next.reservations.core.service.*
 import com.next.reservations.core.utils.Utils
 import com.next.reservations.web.request.ReservationRequest
+import com.next.reservations.web.request.TimeChangeRequest
 import com.next.reservations.web.response.ReservationResponse
 import com.next.shared.domain.Option
 import org.springframework.stereotype.Service
+import java.time.LocalDate
 
 @Service
 class ReservationMapper(private val reservationService: ReservationService,
                         private val reservationTimeConfigurationService: ReservationTimeConfigurationService,
-                        private val reservationManagingService: ReservationManagingService) {
+                        private val reservationManagingService: ReservationManagingService,
+                        private val reservationTimeService: ReservationTimeService) {
 
     fun createReservation(reservationRequest: ReservationRequest): Long {
         return reservationManagingService.createReservation(reservationRequest).id
@@ -64,4 +67,22 @@ class ReservationMapper(private val reservationService: ReservationService,
     fun getAllStatuses(): List<Option> =
             ReservationStatus.values().map { Option(it.ordinal, it.name) }
 
+
+    fun acceptReservation(id: Long) {
+        reservationService.acceptReservation(id)
+    }
+
+    fun rejectReservation(id: Long) {
+        reservationService.rejectReservation(id)
+    }
+
+    fun changeTimeAndAccept(timeChangeRequest: TimeChangeRequest) {
+        val dateParts = timeChangeRequest.date.split("-").map { it.toInt() }
+
+        val localDate = LocalDate.of(dateParts[0], dateParts[1], dateParts[2])
+
+        reservationService.changeTimeAndAccept(timeChangeRequest.id,
+                localDate,
+                reservationTimeService.findById(timeChangeRequest.reservationTimeId))
+    }
 }

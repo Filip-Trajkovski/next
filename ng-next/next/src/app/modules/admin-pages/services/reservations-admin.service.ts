@@ -4,6 +4,7 @@ import {Observable} from "rxjs";
 import {Reservation} from "../../shared/interfaces/reservation.interface";
 import {ReservationStatus} from "../../shared/enums/reservation-status.enum";
 import {Option} from "../../shared/interfaces/option.interface";
+import {TimeChange} from "../interfaces/time-change.interface";
 
 @Injectable()
 export class ReservationsAdminService {
@@ -33,5 +34,17 @@ export class ReservationsAdminService {
 
   findAllStatuses(): Observable<Option[]> {
     return this._http.get<Option[]>(`${this.path}/statuses`);
+  }
+
+  acceptReservation(id: number): Observable<void> {
+    return this._http.post<void>(`${this.path}/accept/${id}`, {});
+  }
+
+  rejectReservation(id: number): Observable<void> {
+    return this._http.post<void>(`${this.path}/reject/${id}`, {});
+  }
+
+  changeDateAndAccept(timeChange: TimeChange): Observable<void>{
+    return this._http.post<void>(`${this.path}/change-time`, timeChange);
   }
 }
