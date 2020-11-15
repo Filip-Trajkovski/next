@@ -12,11 +12,6 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("api/reservations")
 class ReservationController(private val mapper: ReservationMapper) {
 
-    @PostMapping
-    fun createReservation(@RequestBody request: ReservationRequest): Long {
-        return mapper.createReservation(request)
-    }
-
     @GetMapping("/by-time-config/{configId}")
     fun findAllActiveByConfigId(@PathVariable configId: Long): List<ReservationResponse> =
             mapper.findAllActiveReservationsByConfig(configId)

@@ -21,12 +21,21 @@ create table reservations.reservation_time_configurations
     default_start_date date
 );
 
+insert into reservations.reservation_time_configurations(name, default_config, default_start_date)
+values('DEFAULT', true, null);
+
 create table reservations.reservation_times
 (
     id                                bigserial primary key,
     time_of_day                       time      not null,
     reservation_time_configuration_id bigserial not null references reservations.reservation_time_configurations (id)
 );
+
+insert into reservations.reservation_times(time_of_day, reservation_time_configuration_id)
+values('17:15', (select id from reservations.reservation_time_configurations where name = 'DEFAULT')),
+      ('18:50', (select id from reservations.reservation_time_configurations where name = 'DEFAULT')),
+      ('20:25', (select id from reservations.reservation_time_configurations where name = 'DEFAULT')),
+      ('22:00', (select id from reservations.reservation_time_configurations where name = 'DEFAULT'));
 
 create table reservations.alternative_reservation_time_date_ranges
 (

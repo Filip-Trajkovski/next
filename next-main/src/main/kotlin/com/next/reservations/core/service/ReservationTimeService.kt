@@ -27,7 +27,7 @@ class ReservationTimeService(private val repository: ReservationTimeRepository) 
     }
 
     fun findAllByReservationTimeConfigId(reservationTimeConfigId: Long): List<ReservationTime> {
-        return repository.findAllByReservationTimeConfigurationId(reservationTimeConfigId)
+        return repository.findAllByReservationTimeConfigurationId(reservationTimeConfigId).sortedBy { it.time }
     }
 
     fun findById(id: Long): ReservationTime {

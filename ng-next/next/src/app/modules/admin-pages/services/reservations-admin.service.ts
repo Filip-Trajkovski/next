@@ -2,7 +2,6 @@ import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Reservation} from "../../shared/interfaces/reservation.interface";
-import {ReservationStatus} from "../../shared/enums/reservation-status.enum";
 import {Option} from "../../shared/interfaces/option.interface";
 import {TimeChange} from "../interfaces/time-change.interface";
 

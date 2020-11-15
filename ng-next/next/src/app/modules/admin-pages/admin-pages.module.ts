@@ -10,7 +10,7 @@ import {
   MatDatepickerModule,
   MatDialogModule,
   MatInputModule, MatRadioModule,
-  MatSelectModule
+  MatSelectModule, MatTooltipModule
 } from "@angular/material";
 import {HttpClientModule} from "@angular/common/http";
 import {ReservationComponent} from "./components/reservation/reservation.component";
@@ -22,6 +22,7 @@ import {ReservationsListPage} from "./pages/reservations-list/reservations-list.
 import {MatMomentDateModule} from "@angular/material-moment-adapter";
 import {ChangeDateDialog} from "./dialogs/change-date/change-date.dialog";
 import {ReservationsService} from "../shared/modules/reservations/services/reservations.service";
+import {AdminNavMenuPage} from "./pages/admin-nav-menu/admin-nav-menu.page";
 
 const modules = [
   AdminPagesRoutingModule,
@@ -33,7 +34,9 @@ const modules = [
   NgxMaterialTimepickerModule,
   MatDatepickerModule,
   MatSelectModule,
-  MatMomentDateModule
+  MatMomentDateModule,
+  FormsModule,
+  MatRadioModule
 ];
 
 const views = [];
@@ -46,7 +49,8 @@ const dialogs = [
 
 const pages = [
   ReservationTimeConfigurationsPage,
-  ReservationsListPage
+  ReservationsListPage,
+  AdminNavMenuPage
 ];
 
 const components = [
@@ -63,7 +67,7 @@ const services = [
 
 @NgModule({
   providers: [...services],
-  imports: [...modules, MatInputModule, FormsModule, MatRadioModule],
+  imports: [...modules, MatInputModule, MatTooltipModule],
   declarations: [...pages, ...views, ...components, ...dialogs],
   entryComponents: [...dialogs]
 })

@@ -39,6 +39,13 @@ class ReservationTimeMapper(private val reservationTimeService: ReservationTimeS
         val dateParts = date.split("-").map { it.toInt() }
 
         val chosenDate = LocalDate.of(dateParts[0], dateParts[1], dateParts[2])
+
+        val todaysDate = LocalDate.now()
+
+        if(chosenDate.isBefore(todaysDate)){
+            return listOf()
+        }
+
         val configForDate = reservationTimeManagingService.findConfigurationForDate(chosenDate)
 
         return reservationTimeManagingService.findUnreservedTimesForDate(chosenDate, configForDate)

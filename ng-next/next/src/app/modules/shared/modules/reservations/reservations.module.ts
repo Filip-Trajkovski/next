@@ -13,6 +13,7 @@ import {ReservationsService} from "./services/reservations.service";
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {MatMomentDateModule, MomentDateAdapter} from "@angular/material-moment-adapter";
+import {MessageDialog} from "./dialogs/message/message.dialog";
 
 const MY_FORMATS = {
   parse: {
@@ -25,6 +26,10 @@ const MY_FORMATS = {
     monthYearA11yLabel: 'YYYY',
   },
 };
+
+const dialogs = [
+  MessageDialog
+];
 
 const views = [
   ReservationCreateView
@@ -50,11 +55,12 @@ const dateFormat = [
 ]
 
 @NgModule({
-  declarations: [...views],
+  declarations: [...views, ...dialogs],
   imports: [...modules],
   providers: [...services, ...dateFormat],
   exports: [...views],
-  bootstrap: []
+  bootstrap: [],
+  entryComponents: [...dialogs]
 })
 export class ReservationsModule {
 }

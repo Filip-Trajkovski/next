@@ -21,11 +21,6 @@ class ReservationTimeController(private val mapper: ReservationTimeMapper) {
         return mapper.findAllReservationTimesByConfigId(configId)
     }
 
-    @GetMapping("by-date/{date}")
-    fun findAllByDate(@PathVariable date: String): List<Option> {
-        return mapper.getTimesForDate(date)
-    }
-
     @DeleteMapping("/{id}")
     fun deleteById(@PathVariable id: Long) {
         return mapper.deleteById(id)

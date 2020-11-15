@@ -6,6 +6,7 @@
       <p>PHONE NUMBER: <span>{{reservation.phoneNumber}}</span></p>
       <p>NUMBER OF PLAYERS: <span>{{reservation.numberOfPlayers}} играчи</span></p>
       <p>STATUS: <span>{{handleStatus(reservation.status)}}</span></p>
+      <div class="comment" *ngIf="!!reservation.comment" [matTooltip]="reservation.comment">Comment</div>
     </div>
     <div class="reservation-dates">
       <p>Previous date:</p>

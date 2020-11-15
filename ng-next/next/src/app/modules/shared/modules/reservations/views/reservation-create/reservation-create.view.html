@@ -17,7 +17,9 @@
           {{reservationTime.label}}
         </mat-option>
       </mat-select>
+      <span *ngIf="invalidDate" class="no-termins">Нема слободни термини за селектираниот датум</span>
     </mat-form-field>
+
 
     <mat-form-field appearance="fill" class="selected-value">
       <mat-label>Изберете број на играчи*</mat-label>
@@ -49,7 +51,7 @@
       <mat-placeholder class="placeholder">Дополнителен коментар</mat-placeholder>
     </mat-form-field>
     <div class="d-flex">
-    <a class="submit-button mt-3" (click)="onSubmit()">Резервирај</a>
+      <button class="submit-button" [disabled]="!form.valid" (click)="onSubmit()">Резервирај</button>
     </div>
   </form>
 </div>

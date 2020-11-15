@@ -6,13 +6,12 @@ import {Reservation} from "../../../interfaces/reservation.interface";
 
 @Injectable()
 export class ReservationsService {
-  private readonly path = 'api/reservations';
-  private readonly timePath = 'api/reservation-times';
+  private readonly path = 'api/public/reservations';
 
   constructor(private _http: HttpClient){}
 
   findUnreservedTimesForDate(date: string): Observable<Option[]> {
-    return this._http.get<Option[]>(`${this.timePath}/by-date/${date}`);
+    return this._http.get<Option[]>(`${this.path}/times-by-date/${date}`);
   }
 
   makeReservation(reservation: Reservation): Observable<number> {

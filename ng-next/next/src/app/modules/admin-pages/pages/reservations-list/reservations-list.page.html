@@ -5,11 +5,11 @@
     </mat-radio-group>
   </div>
 
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="fill"  (click)="onDatepickerInputClick()">
     <mat-label>From date:</mat-label>
     <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" (ngModelChange)="onFilterChange()">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
+    <mat-datepicker [startAt]="date" #picker></mat-datepicker>
   </mat-form-field>
 </div>
 

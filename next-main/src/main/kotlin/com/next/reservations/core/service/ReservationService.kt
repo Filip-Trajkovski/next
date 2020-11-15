@@ -4,6 +4,8 @@ import com.next.reservations.core.domain.Reservation
 import com.next.reservations.core.domain.ReservationDetails
 import com.next.reservations.core.domain.ReservationStatus
 import com.next.reservations.core.domain.ReservationTime
+import com.next.reservations.core.event.ReservationEvent
+import com.next.reservations.core.publisher.MailPublisher
 import com.next.reservations.core.repository.ReservationRepository
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled
@@ -14,7 +16,8 @@ import java.time.LocalTime
 
 @Service
 @EnableScheduling
-class ReservationService(private val repository: ReservationRepository) {
+class ReservationService(private val repository: ReservationRepository,
+                         private val mailPublisher: MailPublisher) {
 
     val activeReservationStatuses = listOf(ReservationStatus.ACCEPTED, ReservationStatus.PENDING)
 
@@ -28,7 +31,10 @@ class ReservationService(private val repository: ReservationRepository) {
         val reservation = Reservation(status, reservationDetails,
                 reservationDate, reservationTime, null, null)
 
-        return repository.save(reservation)
+        repository.save(reservation)
+        mailPublisher.publishCustomEvent(reservation)
+
+        return reservation
     }
 
     @Transactional

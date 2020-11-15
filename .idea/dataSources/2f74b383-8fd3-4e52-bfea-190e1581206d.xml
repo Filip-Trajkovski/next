@@ -5,18 +5,18 @@
       <ServerVersion>11.9</ServerVersion>
     </root>
     <database id="2" parent="1" name="next_db">
-      <ObjectId>17574</ObjectId>
-      <StateNumber>880</StateNumber>
+      <ObjectId>17821</ObjectId>
+      <StateNumber>1137</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>893</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1149</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|17645|17647|1
-sequence|table|17634|17636|1
-sequence|table|17621|17623|1
-sequence|table|17594|17596|1
-sequence|table|17607|17609|3
-sequence|table|17605|17609|1
+      <Relations>sequence|table|17841|17843|1
+sequence|table|17852|17856|1
+sequence|table|17854|17856|3
+sequence|table|17868|17870|1
+sequence|table|17881|17883|1
+sequence|table|17892|17894|1
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -80,7 +80,7 @@ sequence|table|17605|17609|1
       <ObjectId>12716</ObjectId>
       <StateNumber>366</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>886</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1150</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="14" parent="2" name="pg_catalog">
@@ -88,14 +88,14 @@ sequence|table|17605|17609|1
       <Comment>system catalog schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>887</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1151</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="15" parent="2" name="pg_temp_1">
       <ObjectId>11804</ObjectId>
       <StateNumber>121</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>888</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1152</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="16" parent="2" name="pg_toast">
@@ -103,14 +103,14 @@ sequence|table|17605|17609|1
       <Comment>reserved schema for TOAST tables</Comment>
       <StateNumber>1</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>889</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1153</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="17" parent="2" name="pg_toast_temp_1">
       <ObjectId>11805</ObjectId>
       <StateNumber>121</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>890</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1154</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="18" parent="2" name="public">
@@ -118,15 +118,15 @@ sequence|table|17605|17609|1
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>891</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1155</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
     <schema id="19" parent="2" name="reservations">
-      <ObjectId>17585</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17832</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>894</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1156</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <access-method id="20" parent="2" name="btree">
@@ -52191,87 +52191,87 @@ sequence|table|17605|17609|1
       <CType>zu_ZA</CType>
     </collation>
     <table id="4684" parent="18" name="flyway_schema_history">
-      <ObjectId>17575</ObjectId>
+      <ObjectId>17822</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
     </table>
     <sequence id="4685" parent="19" name="alternative_reservation_time_date_ranges_id_seq">
-      <ObjectId>17621</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17868</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="4686" parent="19" name="reservation_details_id_seq">
-      <ObjectId>17634</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17881</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="4687" parent="19" name="reservation_time_configurations_id_seq">
-      <ObjectId>17594</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17841</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="4688" parent="19" name="reservation_times_id_seq">
-      <ObjectId>17605</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17852</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="4689" parent="19" name="reservation_times_reservation_time_configuration_id_seq">
-      <ObjectId>17607</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17854</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <sequence id="4690" parent="19" name="reservations_id_seq">
-      <ObjectId>17645</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17892</ObjectId>
+      <StateNumber>1148</StateNumber>
       <Owner>postgres</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
     <table id="4691" parent="19" name="alternative_reservation_time_date_ranges">
-      <ObjectId>17623</ObjectId>
+      <ObjectId>17870</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
     </table>
     <table id="4692" parent="19" name="reservation_details">
-      <ObjectId>17636</ObjectId>
+      <ObjectId>17883</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
     </table>
     <table id="4693" parent="19" name="reservation_statuses">
-      <ObjectId>17586</ObjectId>
+      <ObjectId>17833</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
     </table>
     <table id="4694" parent="19" name="reservation_time_configurations">
-      <ObjectId>17596</ObjectId>
+      <ObjectId>17843</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
     </table>
     <table id="4695" parent="19" name="reservation_times">
-      <ObjectId>17609</ObjectId>
+      <ObjectId>17856</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
     </table>
     <table id="4696" parent="19" name="reservations">
-      <ObjectId>17647</ObjectId>
+      <ObjectId>17894</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
     </table>
     <check id="4697" parent="27" name="cardinal_number_domain_check">
       <ObjectId>12731</ObjectId>
@@ -98062,54 +98062,54 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="15289" parent="4684" name="version">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="15290" parent="4684" name="description">
       <Position>3</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="15291" parent="4684" name="type">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="15292" parent="4684" name="script">
       <Position>5</Position>
       <DataType>varchar(1000)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="15293" parent="4684" name="checksum">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="15294" parent="4684" name="installed_by">
       <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="15295" parent="4684" name="installed_on">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
@@ -98117,31 +98117,31 @@ umserver</ColNames>
       <Position>9</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="15297" parent="4684" name="success">
       <Position>10</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>881</StateNumber>
+      <StateNumber>1145</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <index id="15298" parent="4684" name="flyway_schema_history_pk">
-      <ObjectId>17582</ObjectId>
-      <StateNumber>882</StateNumber>
+      <ObjectId>17829</ObjectId>
+      <StateNumber>1146</StateNumber>
       <ColNames>installed_rank</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <index id="15299" parent="4684" name="flyway_schema_history_s_idx">
-      <ObjectId>17584</ObjectId>
-      <StateNumber>883</StateNumber>
+      <ObjectId>17831</ObjectId>
+      <StateNumber>1147</StateNumber>
       <ColNames>success</ColNames>
     </index>
     <key id="15300" parent="4684" name="flyway_schema_history_pk">
-      <ObjectId>17583</ObjectId>
-      <StateNumber>882</StateNumber>
+      <ObjectId>17830</ObjectId>
+      <StateNumber>1146</StateNumber>
       <ColNames>installed_rank</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>flyway_schema_history_pk</UnderlyingIndexName>
@@ -98150,7 +98150,7 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <DefaultExpression>nextval(&apos;reservations.alternative_reservation_time_date_ranges_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
@@ -98158,42 +98158,42 @@ umserver</ColNames>
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="15303" parent="4691" name="to_date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="15304" parent="4691" name="reservation_time_configuration_id">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="15305" parent="4691" name="alternative_reservation_time_date_ranges_pkey">
-      <ObjectId>17627</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17874</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="15306" parent="4691" name="alternative_reservation_time_date_ranges_pkey">
-      <ObjectId>17628</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17875</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>alternative_reservation_time_date_ranges_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="15307" parent="4691" name="alternative_reservation_time__reservation_time_configurati_fkey">
-      <ObjectId>17629</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17876</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>reservation_time_configuration_id</ColNames>
-      <RefTableId>17596</RefTableId>
+      <RefTableId>17843</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>reservation_time_configurations</RefTableName>
       <RefKeyName>reservation_time_configurations_pkey</RefKeyName>
@@ -98203,7 +98203,7 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <DefaultExpression>nextval(&apos;reservations.reservation_details_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
@@ -98211,46 +98211,46 @@ umserver</ColNames>
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="15310" parent="4692" name="email">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="15311" parent="4692" name="phone_number">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="15312" parent="4692" name="comment">
       <Position>5</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="15313" parent="4692" name="number_of_players">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="15314" parent="4692" name="reservation_details_pkey">
-      <ObjectId>17643</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17890</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="15315" parent="4692" name="reservation_details_pkey">
-      <ObjectId>17644</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17891</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reservation_details_pkey</UnderlyingIndexName>
@@ -98259,26 +98259,26 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="15317" parent="4693" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <index id="15318" parent="4693" name="reservation_statuses_pkey">
-      <ObjectId>17592</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17839</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="15319" parent="4693" name="reservation_statuses_pkey">
-      <ObjectId>17593</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17840</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reservation_statuses_pkey</UnderlyingIndexName>
@@ -98287,7 +98287,7 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <DefaultExpression>nextval(&apos;reservations.reservation_time_configurations_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
@@ -98295,32 +98295,32 @@ umserver</ColNames>
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="15322" parent="4694" name="default_config">
       <Position>3</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <column id="15323" parent="4694" name="default_start_date">
       <Position>4</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <index id="15324" parent="4694" name="reservation_time_configurations_pkey">
-      <ObjectId>17603</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17850</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="15325" parent="4694" name="reservation_time_configurations_pkey">
-      <ObjectId>17604</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17851</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reservation_time_configurations_pkey</UnderlyingIndexName>
@@ -98329,7 +98329,7 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <DefaultExpression>nextval(&apos;reservations.reservation_times_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
@@ -98337,36 +98337,36 @@ umserver</ColNames>
       <Position>2</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1083</TypeId>
     </column>
     <column id="15328" parent="4695" name="reservation_time_configuration_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <DefaultExpression>nextval(&apos;reservations.reservation_times_reservation_time_configuration_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <index id="15329" parent="4695" name="reservation_times_pkey">
-      <ObjectId>17614</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17861</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="15330" parent="4695" name="reservation_times_pkey">
-      <ObjectId>17615</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17862</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reservation_times_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="15331" parent="4695" name="reservation_times_reservation_time_configuration_id_fkey">
-      <ObjectId>17616</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17863</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>reservation_time_configuration_id</ColNames>
-      <RefTableId>17596</RefTableId>
+      <RefTableId>17843</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>reservation_time_configurations</RefTableName>
       <RefKeyName>reservation_time_configurations_pkey</RefKeyName>
@@ -98376,87 +98376,87 @@ umserver</ColNames>
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <DefaultExpression>nextval(&apos;reservations.reservations_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="15333" parent="4696" name="reservation_date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="15334" parent="4696" name="reservation_time_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="15335" parent="4696" name="previous_reservation_date">
       <Position>4</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="15336" parent="4696" name="previous_reservation_time">
       <Position>5</Position>
       <DataType>time|0s</DataType>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>1083</TypeId>
     </column>
     <column id="15337" parent="4696" name="status">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="15338" parent="4696" name="reservation_details_id">
       <Position>7</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>884</StateNumber>
+      <StateNumber>1148</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <index id="15339" parent="4696" name="reservations_pkey">
-      <ObjectId>17651</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17898</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="15340" parent="4696" name="reservations_pkey">
-      <ObjectId>17652</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17899</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reservations_pkey</UnderlyingIndexName>
     </key>
     <foreign-key id="15341" parent="4696" name="reservations_reservation_time_id_fkey">
-      <ObjectId>17653</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17900</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>reservation_time_id</ColNames>
-      <RefTableId>17609</RefTableId>
+      <RefTableId>17856</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>reservation_times</RefTableName>
       <RefKeyName>reservation_times_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="15342" parent="4696" name="reservations_status_fkey">
-      <ObjectId>17658</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17905</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>status</ColNames>
-      <RefTableId>17586</RefTableId>
+      <RefTableId>17833</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>reservation_statuses</RefTableName>
       <RefKeyName>reservation_statuses_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="15343" parent="4696" name="reservations_reservation_details_id_fkey">
-      <ObjectId>17663</ObjectId>
-      <StateNumber>884</StateNumber>
+      <ObjectId>17910</ObjectId>
+      <StateNumber>1148</StateNumber>
       <ColNames>reservation_details_id</ColNames>
-      <RefTableId>17636</RefTableId>
+      <RefTableId>17883</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>reservation_details</RefTableName>
       <RefKeyName>reservation_details_pkey</RefKeyName>

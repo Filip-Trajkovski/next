@@ -5,19 +5,24 @@ import {ReservationsAdminService} from "../../services/reservations-admin.servic
 import {Reservation} from "../../../shared/interfaces/reservation.interface";
 import {DatePipe} from "@angular/common";
 import {Moment} from "moment";
-import {MatDialog} from "@angular/material";
+import {MatDatepicker} from "@angular/material";
+import {FormControl} from "@angular/forms";
 
 @Component({
   templateUrl: "reservations-list.page.html",
   styleUrls: ["reservations-list.page.scss"]
 })
 export class ReservationsListPage {
+  @ViewChild('picker', {static: false})
+  private picker: MatDatepicker<string>;
 
   statuses$: Observable<Option[]>;
   reservations$: Observable<Reservation[]>;
 
   selectedStatus: string;
   selectedDate: Moment;
+
+  date = new Date((new Date().getTime() - 3888000000));
 
   constructor(private _service: ReservationsAdminService,
               private _datePipe: DatePipe) {
@@ -32,5 +37,9 @@ export class ReservationsListPage {
 
   onFilterChange() {
     this.reservations$ = this._service.findAllByStatusAndDateAfter(this.selectedStatus, this.selectedDate.format("DD-MM-yyyy"));
+  }
+
+  onDatepickerInputClick() {
+    this.picker.open();
   }
 }

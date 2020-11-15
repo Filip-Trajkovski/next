@@ -24,28 +24,24 @@ h4 {
 }
 
 .submit-button {
-  color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #5bd311;
-  padding: 14px 25px 14px 25px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #5bd311;
+  border: 1px solid black;
   border-radius: 5px;
+  padding: 14px 25px 14px 25px;
   margin: auto;
   display: inline-block;
-  border: none;
-  transition: all 0.4s ease 0s;
 }
 
-.submit-button:hover {
-  background: #3f9d0c;
-  letter-spacing: 1px;
-  -webkit-box-shadow: 0px 5px 40px -10px #3f9d0c;
-  -moz-box-shadow: 0px 5px 40px -10px #3f9d0c;
-  box-shadow: 5px 40px -10px #3f9d0c;
-  transition: all 0.4s ease 0s;
-  cursor: pointer;
+.submit-button:disabled{
+  background-color: #c3c3c3;
 }
 
+:host /deep/ .mat-select-value-text {
+  color: white !important;
+}
 .selected-value {
   color: white;
 }
@@ -69,4 +65,8 @@ mat-label{
 
 .placeholder  {
   color: white;
+}
+
+.no-termins{
+  color: red;
 }

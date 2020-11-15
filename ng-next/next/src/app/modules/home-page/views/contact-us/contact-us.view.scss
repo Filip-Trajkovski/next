@@ -31,15 +31,20 @@ h4 {
   text-align: center;
   height: 100px;
 
-  & > img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+  & > .contact-icon-container {
+    height: 90px;
+    & > img {
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
   }
 
   & > .contact-text {
+    display: block;
     width: 100%;
-    position: absolute;
     bottom: 0;
   }
 }
@@ -48,19 +53,20 @@ h4 {
   width: 100%;
   padding: 3%;
   display: flex;
+  justify-content: center;
 }
 
 .social-media {
-  max-width: 50%;
-  min-width: 50%;
-  width: 50%;
+  max-width: 9%;
+  min-width: 9%;
+  width: 9%;
   display: flex;
-  justify-content: center;
+  margin: 15px;
 
   & > img {
     margin-left: auto;
     margin-right: auto;
-    width: 12%;
+    width: 100%;
     cursor: pointer;
   }
 }
@@ -94,10 +100,18 @@ h4 {
     max-width: 60%;
     min-width: 60%;
     text-align: center;
-    height: 100px;
+    height: auto;
+
+    & > .contact-icon-container {
+      height: auto;
+    }
   }
 
-  .social-media{
+  .social-media {
+    max-width: 50%;
+    min-width: 50%;
+    width: 50%;
+
     & > img {
       padding-top: 22px;
       width: 30%;
