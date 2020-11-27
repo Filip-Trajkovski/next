@@ -6,7 +6,7 @@ import {Reservation} from "../../../shared/interfaces/reservation.interface";
 import {DatePipe} from "@angular/common";
 import {Moment} from "moment";
 import {MatDatepicker} from "@angular/material";
-import {FormControl} from "@angular/forms";
+import * as moment from "moment";
 
 @Component({
   templateUrl: "reservations-list.page.html",
@@ -20,9 +20,7 @@ export class ReservationsListPage {
   reservations$: Observable<Reservation[]>;
 
   selectedStatus: string;
-  selectedDate: Moment;
-
-  date = new Date((new Date().getTime() - 3888000000));
+  selectedDate: Moment = moment();
 
   constructor(private _service: ReservationsAdminService,
               private _datePipe: DatePipe) {

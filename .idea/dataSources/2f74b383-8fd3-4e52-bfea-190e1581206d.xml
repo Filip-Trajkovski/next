@@ -12,11 +12,11 @@
       <Current>1</Current>
       <Visible>1</Visible>
       <Relations>sequence|table|17841|17843|1
-sequence|table|17852|17856|1
-sequence|table|17854|17856|3
 sequence|table|17868|17870|1
 sequence|table|17881|17883|1
 sequence|table|17892|17894|1
+sequence|table|17852|17856|1
+sequence|table|17854|17856|3
 </Relations>
     </database>
     <database id="3" parent="1" name="postgres">
